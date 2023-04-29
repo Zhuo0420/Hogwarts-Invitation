@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.container{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main";
+    place-content: center;
+}
+.item:first-child{
+    grid-area: header;
+    background-color: midnightblue;
+    height: 20vh;
+    width: 100vw; 
+    text-align: center;
+    line-height: 20vh;
+    color: white;
+    background-image: url(headerImg.png);
+    background-size: 150px;
+    background-repeat: no-repeat;
+    background-position: 0.5vw;
+}
+.item:nth-child(2){
+    grid-area: main;
+    background-color: black;
+    height: 80vh;
+    width: 100vw;
+}
+.vd{
+    width: 100vw;
+    height: auto;
+}
+.text1{
+    width: 100vw;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.p1{
+    font-size: 25px;
+}
