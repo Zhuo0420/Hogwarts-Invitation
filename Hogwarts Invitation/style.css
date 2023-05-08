@@ -9,11 +9,13 @@
     "header"
     "main";
     place-content: center;
+    width: 100vw;
+    height: 100vh;
 }
 .item:first-child{
     grid-area: header;
     background-color: midnightblue;
-    height: 20vh;
+    height: 15vh;
     width: 100vw; 
     text-align: center;
     line-height: 20vh;
@@ -24,21 +26,86 @@
     background-position: 0.5vw;
 }
 .item:nth-child(2){
+    display: flex;
+    justify-content: center;
+    align-items: center;
     grid-area: main;
     background-color: black;
-    height: 80vh;
+    height: 85vh;
     width: 100vw;
 }
 .vd{
-    width: 100vw;
+    width: 50vw;
     height: auto;
 }
 .text1{
+
     width: 100vw;
-    position: relative;
+    position: absolute;
+    bottom: 20px;
     text-align: center;
     color: white;
 }
 .p1{
     font-size: 25px;
+}
+#myCanvas{
+    position: absolute;
+    top: calc(15vh/2 - 25px);
+    right: 20px;
+    width: 50px;
+    height: 50px;
+}
+.menu { 
+    width: 100px;
+    display: flex;
+    position: absolute;
+    top: calc(15vh/2 - 25px);
+    right: 20px;
+    width: 50px;
+    height: 50px;
+} /* 主選單的樣式 */
+.menu:hover { 
+    display: block;  
+}
+.sub-menu { 
+    border-radius: 10px;
+    display: none;
+    flex-direction: column;
+    width: 200px;
+    background-color:rgb(34, 34, 34);  
+    list-style-type:none; 
+    position:absolute; 
+    right: 0; 
+    top: calc(15vh/2 + 10px);
+    line-height: 2;  
+} /* 下拉清單的樣式 */
+.sub-menu div
+{ 
+    /* border: 1px white solid; */
+    color: white;
+} /* 下拉清單每一列的樣式 */
+.sub-menu div a 
+{ 
+    display:flex; 
+    text-decoration:none; 
+    color: white; 
+    justify-content: center;
+    align-items: center;
+}
+.sub-menu a:hover 
+{ 
+    transition: 1s;
+    color:#FFFFFF; 
+    background-color:#6c6c6c; 
+    text-decoration:none; 
+}
+.page1Manu{
+    list-style-type:none; 
+    color: white;
+}
+.page1Manu li{
+    color: white;
+    font-size: 15px;
+    background-color: #434343;
 }

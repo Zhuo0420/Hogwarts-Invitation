@@ -10,12 +10,34 @@
 <body>
     <div class="container">
         <header class="item">
+            <div class="manu" onmouseover="switchMenu( this, 'SubMenu', 'MouseOver' )" onmouseout="hideMenu()">
+                <canvas id="myCanvas" width="50" height="50" ></canvas>
+                <div id="SubMenu" class="sub-menu">
+                    <div>
+                        遊戲特色
+                        <br>
+                        <ul class="page1Manu">
+                            <li><a href="">開放世界</a></li>
+                            <li><a href="">捏臉系統</a></li>
+                            <li><a href="">法術戰鬥</a></li>
+                            <li><a href="">天賦系統</a></li>
+                            <li><a href="">裝備系統</a></li>
+                        </ul>
+                    </div>
+                    <div><a href="" >媒體牆</a></div>
+                    <div><a href="" >建議配備</a></div>
+                    <div><a href="" >開發商簡介</a></div>
+                    <div><a href="" >購買連結</a></div>
+                </ul>
+            </div>
+            
+        
         </header>
         <main class="item">
-        <video class="vd" loop autoplay></video>
+        <video class="vd" loop autoplay></video><br>
         <div class="text1">
-            <p class="p1">霍格華茲的邀請函</p>
-            <p class="p1">Hogwarts Invitation</p>
+            <span class="p1">霍格華茲的邀請函</p>
+            <span class="p1">Hogwarts Invitation</p>
             <br>
             遊戲敘述...
         </div>
@@ -24,3 +46,55 @@
     
 </body>
 </html>
+
+<script>
+    var a = document.getElementById("myCanvas");
+    var ctx = a.getContext('2d');
+    ctx.lineWidth = 3;
+    ctx.strokeStyle = 'white';
+    ctx.beginPath();
+    ctx.moveTo(10,10);
+    ctx.lineTo(40, 10);
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.moveTo(10,20);
+    ctx.lineTo(40,20);
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.moveTo(10,30);
+    ctx.lineTo(40,30);
+    ctx.stroke();
+</script>
+<script>
+    var VisibleMenu = ''; // 記錄目前顯示的子選單的 ID
+
+    // 顯示或隱藏子選單
+    function switchMenu( theMainMenu, theSubMenu, theEvent ){
+        var SubMenu = document.getElementById( theSubMenu );
+        if( SubMenu.style.display == 'none' ){ // 顯示子選單
+            SubMenu.style.display = 'flex';
+            // hideMenu(); // 隱藏子選單
+            VisibleMenu = theSubMenu;
+        }
+        else{ // 隱藏子選單
+            if( theEvent != 'MouseOver' || VisibleMenu != theSubMenu ){
+                SubMenu.style.display = 'none';
+                VisibleMenu = '';
+            }
+        }
+    }
+
+    // 隱藏子選單
+    function hideMenu(){
+        if( VisibleMenu != '' ){
+            document.getElementById( VisibleMenu ).style.display = 'none';
+        }
+        VisibleMenu = '';
+    }
+
+    function Menu(SubMenu){
+        subMenu.style.display == 'flex';
+    }
+</script>
