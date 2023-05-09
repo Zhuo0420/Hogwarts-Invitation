@@ -117,3 +117,26 @@
     width: 150px;
     left: 0.5vw;
 }
+
+/* page4 */
+.dev-info{
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+.dev-info img{
+    height: 250px;
+}
+.dev-games{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.dev-games a img{
+    border: 2px solid gray;
+    border-radius: 5px;
+}
