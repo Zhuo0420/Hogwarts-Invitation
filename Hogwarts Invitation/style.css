@@ -109,3 +109,11 @@
     font-size: 15px;
     background-color: #434343;
 }
+
+.top{
+    display: flex;
+    position: absolute;
+    height: 15vh;
+    width: 150px;
+    left: 0.5vw;
+}
