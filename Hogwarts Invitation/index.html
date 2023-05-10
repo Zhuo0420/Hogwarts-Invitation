@@ -14,23 +14,17 @@
             <div class="manu" onmouseover="switchMenu( this, 'SubMenu', 'MouseOver' )" onmouseout="hideMenu()">
                 <canvas id="myCanvas" width="50" height="50" ></canvas>
                 <div id="SubMenu" class="sub-menu">
-                    <div>
-                        遊戲特色
-                        <br>
-                        <ul class="page1Manu">
-                            <li><a href="page1_1.html">開放世界</a></li>
-                            <li><a href="page1_2.html">捏臉系統</a></li>
-                            <li><a href="page1_3.html">法術戰鬥</a></li>
-                            <li><a href="page1_4.html">天賦系統</a></li>
-                        </ul>
+                    <div class="page1Manu">
+                        <div><a href="page1_1.html">開放世界</a></div>
+                        <div><a href="page1_2.html">捏臉系統</a></div>
+                        <div><a href="page1_3.html">法術戰鬥</a></div>
+                        <div><a href="page1_4.html">天賦系統</a></div>
                     </div>
                     <div><a href="page2.html" >媒體牆</a></div>
                     <div><a href="page3.html" >建議配備</a></div>
                     <div><a href="page4.html" >開發商簡介</a></div>
-                    <div><a href="page5.html" ></a></div>
+                    <div><a href="page5.html" >購買連結</a></div>
                 </div>
-            
-        
         </header>
         <main class="item">
         <video class="vd" loop autoplay></video><br>
@@ -74,7 +68,7 @@
         var SubMenu = document.getElementById( theSubMenu );
         if( SubMenu.style.display == 'none' ){ // 顯示子選單
             SubMenu.style.display = 'flex';
-            // hideMenu(); // 隱藏子選單
+            hideMenu(); // 隱藏子選單
             VisibleMenu = theSubMenu;
         }
         else{ // 隱藏子選單
@@ -91,9 +85,5 @@
             document.getElementById( VisibleMenu ).style.display = 'none';
         }
         VisibleMenu = '';
-    }
-
-    function Menu(SubMenu){
-        subMenu.style.display == 'flex';
     }
 </script>
