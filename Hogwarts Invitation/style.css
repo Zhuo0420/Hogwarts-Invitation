@@ -135,6 +135,16 @@
 }
 
 /* page4 */
+.dev-bg{
+    display: flex;
+    justify-content: center;
+    height: 85vh;
+    width: 100vw;
+    background: url("img/developer-img/HogwartsLegacy.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: fade_in 1.5s ease;
+}
 .dev-info{
     display: flex;
     flex-direction: column;
@@ -143,14 +153,19 @@
     font-size: 20px;
     color: white;
 }
-.dev-info img{
-    height: 200px;
+.dev-info p {
+    background-color: rgba(0, 0, 0, 0.75);
 }
-
+.dev-logo a img{
+    height: 40vh;
+}
+.dev-info hr{
+    border-color: white;
+    border: 2px solid white;
+}
 .dev-games{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content:center;
     gap: 10px;
     width: 70vw;
@@ -158,28 +173,45 @@
 .dev-games a img{
     border: 2px solid gray;
     border-radius: 5px;   
+    opacity: 40%;
 }
 /* 游標指向有光環 */
 .dev-games a :hover{
-    box-shadow: 0 0 60px 5px #fff,  /* inner white */
-    0 0 100px 10px #f0f, /* middle magenta */
-    0 0 140px 15px #0ff; /* outer cyan */;
+    transition: 0.3s;
+    box-shadow: 0 0 12px 1px #fff,  /* inner white */
+    0 0 20px 2px #f0f, /* middle magenta */
+    0 0 28px 3px #0ff; /* outer cyan */;
     border: 2px solid whitesmoke;
+    opacity: 100%;
 }
 /* 向上漸入顯示 */
 .dev-intro{
-    animation: Slide_UP 2s ease-out;
+    animation: Slide_UP 1.5s ease-in-out;
 }
 .dev-games{
-    animation: Slide_UP 2s ease-out;
+    animation: Slide_UP 3s ease-in-out;
 }
 @keyframes Slide_UP{
     0%{
         transform: translateY(250px);
         opacity: 0%;
     }
+    50%{
+        opacity: 0%;
+    }
+    66%{
+        opacity: 25%;
+    }
     100%{
         transform: translateY(0);
+        opacity: 100%;
+    }
+}
+@keyframes fade_in{
+    0%{
+        opacity: 0%;
+    }
+    100%{
         opacity: 100%;
     }
 }
