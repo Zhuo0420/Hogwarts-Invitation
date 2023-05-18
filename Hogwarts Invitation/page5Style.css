@@ -1,32 +1,32 @@
 #store1{
     left: 20vw;
     top: 30vh;
-    /* animation: move1 1s ease 1 forwards; */
+    animation: move1 1s ease 1 forwards;
 }
 #store2{
     left: 30vw;
     top: 55vh;
-    /* animation: move2 1s ease 1 forwards; */
+    animation: move2 1s ease 1 forwards;
 }
 #store3{
     left: 40vw;
     top: 30vh;
-    /* animation: move1 1s ease  1  forwards; */
+    animation: move1 1s ease  1  forwards;
 }
 #store4{
     left: 50vw;
     top: 55vh;
-    /* animation: move2 1s ease 1 forwards; */
+    animation: move2 1s ease 1 forwards;
 }
 #store5{
     left: 60vw;
     top: 30vh;
-    /* animation: move1 1s ease 1 forwards; */
+    animation: move1 1s ease 1 forwards;
 }
 #store6{
     left: 70vw;
     top: 55vh;
-    /* animation: move2 1s ease 1 forwards; */
+    animation: move2 1s ease 1 forwards;
 }
 .sto{
     width: 10vw;
@@ -45,7 +45,8 @@
     box-shadow: 0px 0px 10px 7.5px darkcyan;
     transition: 0.5s;
     transform: scale(1.2);
-    animation: infinite reverse linkLigth 1.5s;
+    background-color: rgb(79, 79, 150);
+    /* animation: infinite reverse linkLight 1.5s; */
     /* animation-name: linkLigth;
     animation-duration:1.5s;
     animation-iteration-count: infinite;
@@ -53,7 +54,7 @@
     animation-play-state: running; */
     
 }
-@keyframes linkLigth {
+@keyframes linkLight {
     0%{
         box-shadow: 0px 0px 10px 0px darkcyan;
     }
