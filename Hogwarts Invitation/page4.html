@@ -6,8 +6,102 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>開發商簡介</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
-     crossorigin="anonymous">
+     <style type="text/css">
+        /* page4 */
+        .dev-bg{
+            z-index: 1;
+            overflow:hidden;
+        }
+        .dev-bg img{
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100vw;
+            opacity: 0; 
+            transition: opacity 1s linear; 
+        }
+        .dev-bg img.active{
+            opacity: 1; 
+        }
+        .dev-info{
+            z-index: 2;
+        }
+        .dev-info{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            gap: 30px;
+            font-size: 20px;
+            color: white;
+        }
+        .dev-info p {
+            background-color: rgba(0, 0, 0, 0.75);
+        }
+        .dev-logo a img{
+            height: 40vh;
+        }
+        .dev-info hr{
+            border-color: white;
+            border: 2px solid white;
+        }
+        .dev-games{
+            display: flex;
+            flex-direction: row;
+            justify-content:center;
+            gap: 10px;
+            width: 70vw;
+        }
+        .dev-games a img{
+            border: 2px solid gray;
+            border-radius: 5px;   
+            opacity: 40%;
+        }
+        .bg-dot-nav{
+            margin-top: 50px;
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            z-index: 2;
+        }
+        .bg-dot{
+            width:10px;height:10px;
+            border-radius:10px;
+            border: 2px solid white;
+            opacity: 75%;
+        }
+        /* 游標指向有光環 */
+        .dev-games a :hover{
+            transition: 0.3s;
+            box-shadow: 0 0 12px 1px #fff,  /* inner white */
+            0 0 20px 2px #f0f, /* middle magenta */
+            0 0 28px 3px #0ff; /* outer cyan */;
+            border: 2px solid whitesmoke;
+            opacity: 100%;
+        }
+        /* 向上漸入顯示 */
+        .dev-intro{
+            animation: Slide_UP 1.5s ease-in-out;
+        }
+        .dev-games{
+            animation: Slide_UP 3s ease-in-out;
+        }
+        @keyframes Slide_UP{
+            0%{
+                transform: translateY(250px);
+                opacity: 0%;
+            }
+            50%{
+                opacity: 0%;
+            }
+            66%{
+                opacity: 25%;
+            }
+            100%{
+                transform: translateY(0);
+                opacity: 100%;
+            }
+        }
+     </style>
 </head>
 <body>
     <div class="container">
@@ -30,24 +124,36 @@
         </header>
         <main class="item">
             <div class="dev-bg" id = "dev-bg">
-                <div class = "dev-info">
-                    <div class="dev-logo">
-                        <a href="https://www.portkeygames.com/" target="_blank"><img src="img/developer-img/portkey_games_logo.png" alt=""></a>
-                    </div>
-                    <div class = "dev-intro">
-                        <p>一個由華納兄弟互動娛樂成立的遊戲品牌，致力於創造奇幻小說系列《哈利波特》衍生的魔法世界相關的電子遊戲<br>
-                            讓玩家身歷其境地於魔法世界中冒險，創作靈感來自於 J.K. 羅琳的原創故事
-                        </p>
-                        <hr>
-                    </div>
-                    <div class="dev-games">
-                        <a href="https://www.magicawakened.com/en" class="games" target="_blank"><img src="img/developer-img/MagicAwakened_Logo.jpeg"></a>
-                        <a href="https://www.harrypotterhogwartsmystery.com/" class="games" target="_blank"><img src="img/developer-img/HogwartsMystery_Logo.jpeg"></a>
-                        <a href="https://www.hogwartslegacy.com/zh-tw" class="games" target="_blank"><img src="img/developer-img/HogwartsLegacy_Logo.jpeg"></a>
-                        <a href="https://play.google.com/store/apps/details?id=com.nianticlabs.hpwu.prod&hl=en&gl=RU" class="games" target="_blank"><img src="img/developer-img/WizardsUnite_Logo.jpeg"></a>
-                        <a href="https://www.portkeygames.com/#" class="games" target="_blank"><img src="img/developer-img/Puzzles&Spells_Logo.jpeg"></a>
-                    </div>
+                <img class="active" src="img/developer-img/MagicAwakened.jpg">
+                <img src="img/developer-img/HogwartsMystery.jpg">
+                <img src="img/developer-img/HogwartsLegacy.jpg">
+                <img src="img/developer-img/WizardsUnite.jpg">
+                <img src="img/developer-img/Puzzles&Spells.jpg">
+            </div>
+            <div class = "dev-info"  id = "dev-info">
+                <div class="dev-logo">
+                    <a href="https://www.portkeygames.com/" target="_blank"><img src="img/developer-img/portkey_games_logo.png" alt=""></a>
                 </div>
+                <div class = "dev-intro">
+                    <p>一個由華納兄弟互動娛樂成立的遊戲品牌，致力於創造奇幻小說系列《哈利波特》衍生的魔法世界相關的電子遊戲<br>
+                        讓玩家身歷其境地於魔法世界中冒險，創作靈感來自於 J.K. 羅琳的原創故事
+                    </p>
+                <hr>
+                </div>
+                <div class="dev-games">
+                    <a href="https://www.magicawakened.com/en" target="_blank"><img src="img/developer-img/MagicAwakened_Logo.jpeg"></a>
+                    <a href="https://www.harrypotterhogwartsmystery.com/" target="_blank"><img src="img/developer-img/HogwartsMystery_Logo.jpeg"></a>
+                    <a href="https://www.hogwartslegacy.com/zh-tw" target="_blank"><img src="img/developer-img/HogwartsLegacy_Logo.jpeg"></a>
+                    <a href="https://play.google.com/store/apps/details?id=com.nianticlabs.hpwu.prod&hl=en&gl=RU" target="_blank"><img src="img/developer-img/WizardsUnite_Logo.jpeg"></a>
+                    <a href="https://www.portkeygames.com/#" target="_blank"><img src="img/developer-img/Puzzles&Spells_Logo.jpeg"></a>
+                </div>
+            </div>
+            <div class="bg-dot-nav">
+                <div class = "bg-dot">1</div>
+                <div class = "bg-dot">2</div>
+                <div class = "bg-dot">3</div>
+                <div class = "bg-dot">4</div>
+                <div class = "bg-dot">5</div>
             </div>
         </main>
         <footer class="item">
@@ -109,30 +215,24 @@
         subMenu.style.display == 'flex';
     }
 </script>
-<script>    
-    const bgs = [
-            "url('img/developer-img/MagicAwakened.jpg')",
-            "url('img/developer-img/HogwartsMystery.jpg')",
-            "url('img/developer-img/HogwartsLegacy.jpg')",
-            "url('img/developer-img/WizardsUnite.jpg')",
-            "url('img/developer-img/Puzzles&Spells.jpg')",
-        ]
-    var section = document.getElementById("dev-bg");
-    var games = document.getElementsByClassName("games");
-    var animation = document.getAnimations();
-    games[0].addEventListener("mouseenter", function(){
-        section.style.backgroundImage = bgs["0"];
-    })
-    games[1].addEventListener("mouseenter", function(){
-        section.style.backgroundImage = bgs["1"];
-    })
-    games[2].addEventListener("mouseenter", function(){
-        section.style.backgroundImage = bgs["2"];
-    })
-    games[3].addEventListener("mouseenter", function(){
-        section.style.backgroundImage = bgs["3"];
-    })
-    games[4].addEventListener("mouseenter", function(){
-        section.style.backgroundImage = bgs["4"];
-    })
+<script>
+    function slideshow() {
+    var slideshow=document.getElementById("dev-bg"),
+    imgs=slideshow.getElementsByTagName("img"), 
+    current=0;
+    function slideOff() {
+        imgs[current].className="";
+    }
+    function slideOn() {
+        imgs[current].className="active"; 
+    }
+    function changeSlide() { 
+    slideOff();
+    current++; 
+    if(current>=imgs.length) current=0;
+    slideOn();
+    }
+    var slideon=setInterval(changeSlide,5000);
+    }
+    slideshow();
 </script>
