@@ -6,119 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>開發商簡介</title>
     <link rel="stylesheet" href="style.css">
-     <style type="text/css">
-        /* page4 */
-        .dev-bg{
-            z-index: 1;
-            overflow:hidden;
-        }
-        .dev-bg img{
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            width: 100vw;
-            opacity: 0;
-            transition: opacity 1s linear; 
-        }
-        .dev-bg img.active{
-            opacity: 1; 
-        }
-        .dev-info{
-            z-index: 2;
-        }
-        .dev-info{
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-            gap: 30px;
-            font-size: 20px;
-            color: white;
-        }
-        .dev-info p {
-            background-color: rgba(0, 0, 0, 0.75);
-        }
-        .dev-logo a img{
-            height: 40vh;
-        }
-        .dev-info hr{
-            border-color: white;
-            border: 2px solid white;
-        }
-        .dev-games{
-            display: flex;
-            flex-direction: row;
-            justify-content:center;
-            gap: 10px;
-            width: 70vw;
-        }
-        .dev-games a{
-            /* border: 2px solid gray; */
-            border-radius: 100px;   
-        }
-        .dev-games a img{
-            border: 2px solid gray;
-            border-radius: 100px;   
-            opacity: 40%;
-        }
-        .bg-dot-nav{
-            margin-top: 50px;
-            display: flex;
-            flex-direction: row;
-            gap: 10px;
-            z-index: 2;
-        }
-        .bg-dot{
-            width:12px;height:12px;
-            border-radius:30px;
-            border: 3px solid white;
-            background-color: rgba(255, 255, 255, 0.1);
-        }
-        .bg-dot:first-child{
-            background-color: white;
-        }
-        /* 游標指向有光環 */
-        .dev-games a :hover{
-            transition: 0.3s;
-            box-shadow: 0 0 12px 1px #fff,  /* inner white */
-            0 0 20px 2px #f0f, /* middle magenta */
-            0 0 28px 3px #0ff; /* outer cyan */;
-            border: 2px solid whitesmoke;
-            opacity: 100%;
-        }
-        /* 向上漸入顯示 */
-        .dev-intro{
-            animation: Slide_UP 1.5s ease-in-out;
-        }
-        .dev-games{
-            animation: Slide_UP 3s ease-in-out;
-        }
-        @keyframes Slide_UP{
-            0%{
-                transform: translateY(250px);
-                opacity: 0%;
-            }
-            50%{
-                opacity: 0%;
-            }
-            66%{
-                opacity: 25%;
-            }
-            100%{
-                transform: translateY(0);
-                opacity: 100%;
-            }
-        }
-        @keyframes bk {
-        0% {
-            left: 0;
-            /* 初始位置*/
-        }
-        4% {
-            left: -100%;
-            /* 0 - 1秒 滑出*/
-        }   
-        }
-     </style>
+    <link rel="stylesheet" href="page4.css">
 </head>
 <body>
     <div class="container">
@@ -141,11 +29,11 @@
         </header>
         <main class="item">
             <div class="dev-bg" id = "dev-bg">
-                <img class="active" id="dev-bg1" src="img/developer-img/MagicAwakened.jpg">
-                <img id="dev-bg2" src="img/developer-img/HogwartsMystery.jpg">
-                <img id="dev-bg3" src="img/developer-img/HogwartsLegacy.jpg">
-                <img id="dev-bg4" src="img/developer-img/WizardsUnite.jpg">
-                <img id="dev-bg5" src="img/developer-img/Puzzles&Spells.jpg">
+                <img class = "active" src="img/developer-img/MagicAwakened.jpg">
+                <img src="img/developer-img/HogwartsMystery.jpg">
+                <img src="img/developer-img/HogwartsLegacy.jpg">
+                <img src="img/developer-img/WizardsUnite.jpg">
+                <img src="img/developer-img/Puzzles&Spells.jpg">
             </div>
             <div class = "dev-info"  id = "dev-info">
                 <div class="dev-logo">
