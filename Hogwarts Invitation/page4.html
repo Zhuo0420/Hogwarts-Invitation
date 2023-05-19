@@ -17,7 +17,7 @@
             left: 0;
             bottom: 0;
             width: 100vw;
-            opacity: 0; 
+            opacity: 0;
             transition: opacity 1s linear; 
         }
         .dev-bg img.active{
@@ -64,10 +64,13 @@
             z-index: 2;
         }
         .bg-dot{
-            width:10px;height:10px;
-            border-radius:10px;
+            width:15px;height:15px;
+            border-radius:30px;
             border: 2px solid white;
-            opacity: 75%;
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+        .bg-dot:first-child{
+            background-color: white;
         }
         /* 游標指向有光環 */
         .dev-games a :hover{
@@ -148,12 +151,12 @@
                     <a href="https://www.portkeygames.com/#" target="_blank"><img src="img/developer-img/Puzzles&Spells_Logo.jpeg"></a>
                 </div>
             </div>
-            <div class="bg-dot-nav">
-                <div class = "bg-dot">1</div>
-                <div class = "bg-dot">2</div>
-                <div class = "bg-dot">3</div>
-                <div class = "bg-dot">4</div>
-                <div class = "bg-dot">5</div>
+            <div class="bg-dot-nav" id = "bg-dot-nav">
+                <div class = "bg-dot"></div>
+                <div class = "bg-dot"></div>
+                <div class = "bg-dot"></div>
+                <div class = "bg-dot"></div>
+                <div class = "bg-dot"></div>
             </div>
         </main>
         <footer class="item">
@@ -220,17 +223,21 @@
     var slideshow=document.getElementById("dev-bg"),
     imgs=slideshow.getElementsByTagName("img"), 
     current=0;
+    var dotnav = document.getElementById("bg-dot-nav"),
+    dots = dotnav.getElementsByTagName("div");
     function slideOff() {
         imgs[current].className="";
+        dots[current].style.backgroundColor = "rgba(255, 255, 255, 0.1)";
     }
     function slideOn() {
         imgs[current].className="active"; 
+        dots[current].style.backgroundColor = "white";
     }
     function changeSlide() { 
-    slideOff();
-    current++; 
-    if(current>=imgs.length) current=0;
-    slideOn();
+        slideOff();
+        current++; 
+        if(current>=imgs.length) current=0;
+        slideOn();
     }
     var slideon=setInterval(changeSlide,5000);
     }
