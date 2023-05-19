@@ -51,9 +51,13 @@
             gap: 10px;
             width: 70vw;
         }
+        .dev-games a{
+            /* border: 2px solid gray; */
+            border-radius: 100px;   
+        }
         .dev-games a img{
             border: 2px solid gray;
-            border-radius: 5px;   
+            border-radius: 100px;   
             opacity: 40%;
         }
         .bg-dot-nav{
@@ -64,9 +68,9 @@
             z-index: 2;
         }
         .bg-dot{
-            width:15px;height:15px;
+            width:12px;height:12px;
             border-radius:30px;
-            border: 2px solid white;
+            border: 3px solid white;
             background-color: rgba(255, 255, 255, 0.1);
         }
         .bg-dot:first-child{
@@ -104,6 +108,16 @@
                 opacity: 100%;
             }
         }
+        @keyframes bk {
+        0% {
+            left: 0;
+            /* 初始位置*/
+        }
+        4% {
+            left: -100%;
+            /* 0 - 1秒 滑出*/
+        }   
+        }
      </style>
 </head>
 <body>
@@ -127,11 +141,11 @@
         </header>
         <main class="item">
             <div class="dev-bg" id = "dev-bg">
-                <img class="active" src="img/developer-img/MagicAwakened.jpg">
-                <img src="img/developer-img/HogwartsMystery.jpg">
-                <img src="img/developer-img/HogwartsLegacy.jpg">
-                <img src="img/developer-img/WizardsUnite.jpg">
-                <img src="img/developer-img/Puzzles&Spells.jpg">
+                <img class="active" id="dev-bg1" src="img/developer-img/MagicAwakened.jpg">
+                <img id="dev-bg2" src="img/developer-img/HogwartsMystery.jpg">
+                <img id="dev-bg3" src="img/developer-img/HogwartsLegacy.jpg">
+                <img id="dev-bg4" src="img/developer-img/WizardsUnite.jpg">
+                <img id="dev-bg5" src="img/developer-img/Puzzles&Spells.jpg">
             </div>
             <div class = "dev-info"  id = "dev-info">
                 <div class="dev-logo">
