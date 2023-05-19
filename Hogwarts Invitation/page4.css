@@ -1,4 +1,7 @@
 /* page4 */
+.item:first-child{
+    z-index: 2;
+}
 .dev-bg{
     z-index: 1;
     overflow:hidden;
