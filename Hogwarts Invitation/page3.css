@@ -41,6 +41,7 @@
 p{
     width: 34.6vw;
     font-size: 35px;
+    cursor: pointer; 
 }
 .active{
     z-index: 1;
