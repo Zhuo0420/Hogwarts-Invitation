@@ -1,5 +1,9 @@
 .spec-form{
-    width: 70vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70vw;
+  height: 85vh;
 }
 .table {
     --border-size: 3px;

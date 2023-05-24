@@ -39,21 +39,20 @@
                 </div>
                 <div class = "dev-info"  id = "dev-info">
                     <div class="dev-logo">
-                        <a href="https://www.portkeygames.com/" target="_blank"><img src="img/developer-img/portkey_games_logo.png" alt=""></a>
+                        <a href="https://www.portkeygames.com/" target="_blank"><img src="img/developer-img/portkey_games_logo_edited.png" alt=""></a>
                     </div>
-                    <div class="dev-logo-mask"></div>
                     <div class = "dev-intro">
                         <p>一個由華納兄弟互動娛樂成立的遊戲品牌，致力於創造奇幻小說系列《哈利波特》衍生的魔法世界相關的電子遊戲<br>
                             讓玩家身歷其境地於魔法世界中冒險，創作靈感來自於 J.K. 羅琳的原創故事
                         </p>
                     <hr>
                     </div>
-                    <div class="dev-games">
+                    <div class="dev-games" id = "dev-games">
                         <a href="https://www.magicawakened.com/en" target="_blank"><img src="img/developer-img/MagicAwakened_Logo.jpeg"></a>
                         <a href="https://www.harrypotterhogwartsmystery.com/" target="_blank"><img src="img/developer-img/HogwartsMystery_Logo.jpeg"></a>
                         <a href="https://www.hogwartslegacy.com/zh-tw" target="_blank"><img src="img/developer-img/HogwartsLegacy_Logo.jpeg"></a>
                         <a href="https://play.google.com/store/apps/details?id=com.nianticlabs.hpwu.prod&hl=en&gl=RU" target="_blank"><img src="img/developer-img/WizardsUnite_Logo.jpeg"></a>
-                        <a href="https://www.portkeygames.com/#" target="_blank"><img src="img/developer-img/Puzzles&Spells_Logo.jpeg"></a>
+                        <a href="https://harrypotterpuzzlesandspells.com/#Home" target="_blank"><img src="img/developer-img/Puzzles&Spells_Logo.jpeg"></a>
                     </div>
                 </div>
                 <div class="bg-dot-nav" id = "bg-dot-nav">
@@ -67,7 +66,7 @@
             
         </main>
         <footer class="item">
-
+           
         </footer>
     </div>
     
@@ -126,11 +125,14 @@
     }
 </script>
 <script>
+    //每五秒換背景
     function slideshow() {
         var bg_disply=document.getElementById("dev-bg"),
         imgs=bg_disply.getElementsByTagName("img");
         var dots = document.getElementsByClassName("bg-dot");
         var current=0;
+        var slideon;
+        
         function slideOff() {
             imgs[current].className="";
             dots[current].style.backgroundColor = "rgba(255, 255, 255, 0.1)";
@@ -145,43 +147,105 @@
             if(current>=imgs.length) current=0;
             slideOn();
         }
+
+        function changeSlide_start(){
+            slideon=setInterval(changeSlide,5000);
+        }
+        function changeSlide_pause(){
+            clearInterval(slideon);
+        }   
+
+        //畫面下方點擊圓點換背景
         dots[0].addEventListener('click', function(){
+            changeSlide_pause();
             imgs[current].className="";
             dots[current].style.backgroundColor = "rgba(255, 255, 255, 0.1)";
             imgs[0].className="active";
             dots[0].style.backgroundColor = "white";
             current = 0;
+            changeSlide_start();
         })
         dots[1].addEventListener('click', function(){
+            changeSlide_pause();
             imgs[current].className="";
             dots[current].style.backgroundColor = "rgba(255, 255, 255, 0.1)";
             imgs[1].className="active";
             dots[1].style.backgroundColor = "white";
             current = 1;
+            changeSlide_start();
         })
         dots[2].addEventListener('click', function(){
+            changeSlide_pause();
             imgs[current].className="";
             dots[current].style.backgroundColor = "rgba(255, 255, 255, 0.1)";
             imgs[2].className="active";
             dots[2].style.backgroundColor = "white";
             current = 2;
+            changeSlide_start();
         })
         dots[3].addEventListener('click', function(){
+            changeSlide_pause();
             imgs[current].className="";
             dots[current].style.backgroundColor = "rgba(255, 255, 255, 0.1)";
             imgs[3].className="active";
             dots[3].style.backgroundColor = "white";
             current = 3;
+            changeSlide_start();
         })
         dots[4].addEventListener('click', function(){
+            changeSlide_pause();
             imgs[current].className="";
             dots[current].style.backgroundColor = "rgba(255, 255, 255, 0.1)";
             imgs[4].className="active";
             dots[4].style.backgroundColor = "white";
             current = 4;
+            changeSlide_start();
         })
-        var slideon=setInterval(changeSlide,5000);
+        changeSlide_start();
     }
     slideshow();
-    
+</script>
+<script>
+    var gamesNav = document.getElementById("dev-games"),
+        gamesLogo = gamesNav.getElementsByTagName("img");
+        gamesLogo[0].addEventListener("mouseover", function(){
+            gamesLogo[0].style.opacity = "1";
+            gamesLogo[1].style.opacity = "0.4";
+            gamesLogo[2].style.opacity = "0.4";
+            gamesLogo[3].style.opacity = "0.4";
+            gamesLogo[4].style.opacity = "0.4";
+        })
+        gamesLogo[1].addEventListener("mouseover", function(){
+            gamesLogo[0].style.opacity = "0.4";
+            gamesLogo[1].style.opacity = "1";
+            gamesLogo[2].style.opacity = "0.4";
+            gamesLogo[3].style.opacity = "0.4";
+            gamesLogo[4].style.opacity = "0.4";
+        })
+        gamesLogo[2].addEventListener("mouseover", function(){
+            gamesLogo[0].style.opacity = "0.4";
+            gamesLogo[1].style.opacity = "0.4";
+            gamesLogo[2].style.opacity = "1";
+            gamesLogo[3].style.opacity = "0.4";
+            gamesLogo[4].style.opacity = "0.4";
+        })
+        gamesLogo[3].addEventListener("mouseover", function(){
+            gamesLogo[0].style.opacity = "0.4";
+            gamesLogo[1].style.opacity = "0.4";
+            gamesLogo[2].style.opacity = "0.4";
+            gamesLogo[3].style.opacity = "1";
+            gamesLogo[4].style.opacity = "0.4";
+        })
+        gamesLogo[4].addEventListener("mouseover", function(){
+            gamesLogo[0].style.opacity = "0.4";
+            gamesLogo[1].style.opacity = "0.4";
+            gamesLogo[2].style.opacity = "0.4";
+            gamesLogo[3].style.opacity = "0.4";
+            gamesLogo[4].style.opacity = "1";
+        })
+        gamesNav.addEventListener("mouseleave", function(){
+            for(var i = 0; i < gamesLogo.length; i++){
+                gamesLogo[i].style.opacity = "1";
+            }
+        })
 </script>
