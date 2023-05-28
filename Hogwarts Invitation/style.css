@@ -7,11 +7,10 @@
     display: grid;
     grid-template-areas: 
     "header"
-    "main"
-    "footer";
+    "main";
     place-content: center;
     width: 100vw;
-    /* height: 100vh; */
+    height: 100vh;
 }
 .item:first-child{
     grid-area: header;
@@ -33,7 +32,7 @@
     align-items: center;
     grid-area: main;
     background-color: black;
-    /* height: 85vh; */
+    height: 85vh;
     width: 100vw;
 }
 .vd{

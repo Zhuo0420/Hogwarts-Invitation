@@ -2,6 +2,9 @@
 .item:first-child {
     z-index: 3;
 }
+.item:nth-child(2){
+    height:auto;
+}
 .item:last-child{
     z-index: 3;
 }

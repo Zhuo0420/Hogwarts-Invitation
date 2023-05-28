@@ -1,3 +1,12 @@
+.item:nth-child(2){
+  justify-content: center;
+}
+.item:first-child {
+  z-index: 1;
+}
+.item:last-child{
+  z-index: 0;
+}
 .spec-form{
   display: flex;
   align-items: center;
