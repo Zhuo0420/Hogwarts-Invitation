@@ -35,6 +35,7 @@
     background-color: midnightblue;
     height: 10vh;
     width: 100vw;
+    z-index: 999;
 }
 
 #myCanvas{
