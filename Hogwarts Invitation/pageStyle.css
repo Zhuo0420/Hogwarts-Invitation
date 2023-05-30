@@ -72,6 +72,7 @@
     top: 0;
     bottom: 0;
     left: calc(100vw - 200px);
+    z-index: 999;
 } /* 下拉清單的樣式 */
 .sub-menu div a 
 { 

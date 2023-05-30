@@ -38,8 +38,8 @@
                     <img class="imgB" src="img/developer-img/tmpImg2.jpg" alt="">
                     <img class="imgD" src="img/developer-img/tmpImg3.jpg" alt="">
                     <div class="imgDCover"></div> -->
-
-                    <div ></div>
+                    <div class="mainItemMask"><div class="MaskText"></div></div>
+                    <video class="vdL" src="" controls ></video>
                 </div>
                 <div class="mainItem" id="imgStream">
                     <div class="main">
@@ -50,9 +50,15 @@
                             <path d="M15,16L45,46 M45,16L15,46" stroke="#000" stroke-width="3.5" opacity="0.5" />
                             <path d="M15,15L45,45 M45,15L15,45" stroke="#fff" stroke-width="2" />
                           </svg>
-                      
                         </div>
                       </div>
+                </div>
+                <div class="vdR">
+                    <video class="vdList" src="video\testVideo1.mp4"></video>
+                    <video class="vdList" src="video\testVideo2.mp4"></video>
+                    <video class="vdList" src="video\testVideo3.mp4"></video>
+                    <video class="vdList" src="video\testVideo4.mp4"></video>
+                    <video class="vdList" src="video\testVideo5.mp4"></video>
                 </div>
         </main>
         <footer class="item">
@@ -255,8 +261,8 @@ for (var i=0; i<12; i++){
     
     gsap.set(b, {
       attr:{ id:'b'+i, class:'photoBox pb-col'+column },
-    //   backgroundImage:'url(img/developer-img/tmpImg'+i+'.jpg)',
-    backgroundImage:'url(https://assets.codepen.io/721952/'+i+'.jpg)',
+      backgroundImage:'url(img/developer-img/tmpImg'+i+'.jpg)',
+    // backgroundImage:'url(https://assets.codepen.io/721952/'+i+'.jpg)',
       backgroundSize:'cover',
       backgroundPosition:'center',
       overflow:'hidden',
@@ -371,4 +377,72 @@ window.onload = function(){
   }
   
 }
+</script>
+
+<!-- 影片推薦列 -->
+<script>
+    var vdL=document.getElementsByClassName("vdL")[0];
+    const vdList=document.getElementsByClassName("vdList");
+    var isClick=false;
+
+    vdList[0].addEventListener('click', function(item){
+        console.log('0vdClick');
+        vdL.src=vdList[0].src;
+        isClick=true;
+    });
+    vdList[1].addEventListener('click', function(item){
+        console.log('1vdClick');
+        vdL.src=vdList[1].src;
+        isClick=true;
+    });
+    vdList[2].addEventListener('click', function(item){
+        console.log('2vdClick');
+        vdL.src=vdList[2].src;
+        isClick=true;
+    });
+    vdList[3].addEventListener('click', function(item){
+        console.log('3vdClick');
+        vdL.src=vdList[3].src;
+        isClick=true;
+    });
+    vdList[4].addEventListener('click', function(item){
+        console.log('4vdClick');
+        vdL.src=vdList[4].src;
+        isClick=true;
+    });
+
+    //閒置狀態 自動切換影片(不撥放)
+    var tmp=0;
+    setInterval(() => {
+        console.log('switch');
+        if(!isClick && vdL.paused==true){
+            // 找左影片是第幾個影片 tmp = index, vdList[index]
+            while(true){
+                if(vdList[tmp] = vdL.src || vdL.src ==''){
+                    break;
+                }
+                else{
+                    tmp++;
+                }
+            }
+
+            if(tmp==vdList.length-1){
+                tmp=0;
+            }
+            else{
+                tmp+=1;
+            }
+            console.log(tmp);
+            vdL.src=vdList[tmp].src;
+            vdL.style.transition = "0.5s";
+        }
+    }, 5000);
+
+    // 左方為非玩家選擇的影片且影片為暫停狀態 
+    setInterval(() => {
+        if(vdL.paused==true){
+            isClick=false;
+        }
+    }, 5000);
+    
 </script>

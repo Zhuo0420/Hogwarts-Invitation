@@ -62,7 +62,7 @@ main div{
 }
 
 .mainItemMask{
-    border-radius: 50px;
+    border-radius: 100px;
     background: radial-gradient(white 25%, rgba(0, 0, 0, 0) 75%);
     opacity: 0.5;
     width: 500px;
@@ -235,32 +235,35 @@ dialog::backdrop {
     background-color: white;
     justify-content: center;
     align-self: center;
-    width: 100%;
-    left: 5vw;
+    width: 55vw;
+    left: 10vw;
     position: relative;
-    bottom: 5vh;
+    /* bottom: 0vh; */
 
 }
 
 .vdR{
+    max-width: 300px;
     width: 30vw;
-    height: 85vh;
+    height: 90vh;
     display: flex;
     position: absolute;
     top: 120vh;
     right: 5vw;
     justify-content: space-around;
     align-items: center;
-    background-color: white;
-    opacity: 0.5;
-    border-radius: 30px;
+    flex-direction: column;
+    /* background-color: white; */
+    /* opacity: 0.5; */
+    background: radial-gradient(rgb(3, 45, 255) 50%, rgba(0, 0, 0, 0) 75%);
+    /* border-radius: 20px; */
     z-index: 5;
 
 }
 
 .vdList{
-    width: 80%;
+    width: 70%;
     background-color: white;
-    opacity: 0.5;
+    /* opacity: 0.5; */
     
 }
