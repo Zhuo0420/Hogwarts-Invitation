@@ -55,11 +55,11 @@
                       </div>
                 </div>
                 <div data-aos="zoom-in-left" class="vdR">
-                    <video class="vdList" src="video\testVideo1.mp4"></video>
-                    <video class="vdList" src="video\testVideo2.mp4"></video>
-                    <video class="vdList" src="video\testVideo3.mp4"></video>
-                    <video class="vdList" src="video\testVideo4.mp4"></video>
-                    <video class="vdList" src="video\testVideo5.mp4"></video>
+                    <video class="vdList" poster="page2Cover1.png" src="video/videoplayback1.mp4"></video>
+                    <video class="vdList" poster="page2Cover2.png"  src="video/videoplayback2.mp4"></video>
+                    <video class="vdList"  src=""></video>
+                    <video class="vdList"  src=""></video>
+                    <video class="vdList"  src=""></video>
                 </div>
         </main>
         <footer class="item">
@@ -362,7 +362,7 @@ window.onload = function(){
             .set(currentImg,       {zIndex:100})
             .fromTo('.mainClose',  {x:mouse.x, y:mouse.y, background:'rgba(0,0,0,0)'}, {autoAlpha:1, duration:0.3, ease:'power3.inOut'}, 0)
             .to('.photoBox',       {opacity:0}, 0)
-            .to(currentImg,        {width:'100%', height:'100%', borderRadius:0, x:0, top:0, y:0, scale:1, opacity:1, zIndex: 500}, 0)
+            .to(currentImg,        {width:'100%', height:'100%', borderRadius:0, x:0, top:0, y:0, scale:1, opacity:1}, 0)
             .to('.mainBoxes',      {duration:0.5, left:'50%', width:'100%', rotationX:0, rotationY:0, rotationZ:0}, 0.15)
             .to('.mainBoxes',      {duration:5, scale:1.06, rotation:0.05, ease:'none'}, 0.65)
       }
