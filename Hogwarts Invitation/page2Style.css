@@ -49,7 +49,7 @@ main div{
 
     overflow:hidden;
     background:#000;
-    z-index: 5;
+    /* z-index: 5; */
     
     /* position:absolute; */
 }
@@ -68,9 +68,11 @@ main div{
     width: 500px;
     height: 200px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: -1;
+    position: absolute;
+    /* justify-content: center;
+    align-items: center; */
+    z-index: 100;
+    top: calc(50vh - 100px);
 }
 
 .imgU{
@@ -230,6 +232,9 @@ dialog::backdrop {
     background:#000;
     position:absolute;
   }
+  #imgStream div, .main div{
+    z-index: 999;
+  }
 
   /* 左側大影片 */
 .vdL{
@@ -238,8 +243,8 @@ dialog::backdrop {
     align-self: center;
     width: 55vw;
     left: 10vw;
-    position: relative;
-    /* bottom: 0vh; */
+    position: absolute;
+    bottom: 30vh;
 
 }
 

@@ -36,16 +36,20 @@
     width: 100vw;
 }
 .vd{
-    width: 50vw;
-    height: auto;
+    width: auto;
+    height: 85vh;
+    z-index: 1;
+    position: absolute;
+    top: 15vh;
 }
 .text1{
-    
     width: 50vw;
-    position: relative;
-    bottom: 20px;
+    position: absolute;
+    bottom: 15vh;
     text-align: center;
     color: white;
+    border-radius: 100px;
+    z-index: 2;background: radial-gradient(rgba(0, 0, 0, 0.623), rgba(0, 0, 0, 0));
 }
 .p1{
     font-size: 25px;

@@ -39,7 +39,7 @@
                     <img class="imgB" src="img/developer-img/tmpImg2.jpg" alt="">
                     <img class="imgD" src="img/developer-img/tmpImg3.jpg" alt="">
                     <div class="imgDCover"></div> -->
-                    <div class="mainItemMask"><div class="MaskText"></div></div>
+                    
                     <video class="vdL" src="" controls ></video>
                 </div>
                 <div class="mainItem" id="imgStream">
@@ -56,7 +56,7 @@
                 </div>
                 <div data-aos="zoom-in-left" class="vdR">
                     <video class="vdList" poster="page2Cover1.png" src="video/videoplayback1.mp4"></video>
-                    <video class="vdList" poster="page2Cover2.png"  src="video/videoplayback2.mp4"></video>
+                    <video class="vdList" poster=""  src=""></video>
                     <video class="vdList"  src=""></video>
                     <video class="vdList"  src=""></video>
                     <video class="vdList"  src=""></video>
@@ -69,7 +69,9 @@
         <dialog id="infoModal">
             <img src="img/developer-img/tmpImg1.jpg" alt="" id="BigImg">
         </dialog>
-
+        <!-- <div class="mainItemMask">
+            <div class="MaskText"></div>
+        </div> -->
     </div>
 </body>
 </html>
@@ -362,9 +364,9 @@ window.onload = function(){
             .set(currentImg,       {zIndex:100})
             .fromTo('.mainClose',  {x:mouse.x, y:mouse.y, background:'rgba(0,0,0,0)'}, {autoAlpha:1, duration:0.3, ease:'power3.inOut'}, 0)
             .to('.photoBox',       {opacity:0}, 0)
-            .to(currentImg,        {width:'100%', height:'100%', borderRadius:0, x:0, top:0, y:0, scale:1, opacity:1}, 0)
-            .to('.mainBoxes',      {duration:0.5, left:'50%', width:'100%', rotationX:0, rotationY:0, rotationZ:0}, 0.15)
-            .to('.mainBoxes',      {duration:5, scale:1.06, rotation:0.05, ease:'none'}, 0.65)
+            .to(currentImg,        {width:'100%', height:'100%', borderRadius:0, x:0, top:0, y:0, scale:1, opacity:1, zIndex: "100"}, 0)
+            .to('.mainBoxes',      {duration:0.5, left:'50%', width:'100%', rotationX:0, rotationY:0, rotationZ:0, zIndex: 100}, 0.15)
+            .to('.mainBoxes',      {duration:5, scale:1.06, rotation:0.05, ease:'none', zIndex: 100}, 0.65)
       }
     }
   });
@@ -380,8 +382,13 @@ window.onload = function(){
       if (currentImg) gsap.to('.mainClose', {duration:0.1, x:mouse.x, y:mouse.y, overwrite:'auto'});
     });  
   }
-  
 }
+var M = document.getElementsByClassName('mainItemMask');
+var box = document.getElementsByClassName('photoBox pb-col0');
+  box.addEventListener('click', function(){
+    console.log('mask');
+    M.style.display = "none";
+  })
 </script>
 
 <!-- 影片推薦列 -->
