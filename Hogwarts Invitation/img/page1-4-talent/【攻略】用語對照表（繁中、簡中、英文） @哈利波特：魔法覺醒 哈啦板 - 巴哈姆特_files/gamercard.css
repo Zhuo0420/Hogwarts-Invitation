@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=Teko&display=swap");
+.tippy-popper {
+  outline: 0;
+}
+
+.tippy-tooltip[data-template-id="#gamerCardTemplate"] {
+  padding: 0;
+}
+
+.usercard {
+  width: 384px;
+  background: #FFF;
+}
+
+.usercard:after {
+  content: "";
+  top: 40%;
+}
+
+.usercard .usercard__background {
+  border-radius: 4px 4px 0 0;
+  height: 100px;
+  overflow: hidden;
+}
+
+.usercard .usercard__background img {
+  width: 100%;
+  height: auto;
+}
+
+.usercard .usercard__avatar {
+  position: absolute;
+  top: 72px;
+  left: 16px;
+  width: 110px;
+  height: 160px;
+  border: 3px solid #FFF;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.usercard .usercard__avatar img {
+  width: 100%;
+}
+
+.usercard .usercard__data {
+  position: relative;
+  margin-left: 140px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  overflow: hidden;
+  text-align: left;
+}
+
+.usercard .usercard-name {
+  line-height: 18px;
+}
+
+.usercard .usercard__data .usercard-name .usercard-level {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  border-radius: 4px;
+  padding: 13px 0;
+  width: 34px;
+  height: 34px;
+  line-height: 18px;
+  background: #4d4d4d;
+  color: #FFF;
+  text-align: center;
+  text-indent: 2px;
+  font-size: 24px;
+  font-family: 'Teko', sans-serif;
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.usercard .usercard__data .usercard-name .usercard-level:before {
+  content: "Lv.";
+  position: absolute;
+  top: 0;
+  left: 4px;
+  font-size: 12px;
+  -webkit-transform: scale(0.9, 0.9);
+  transform: scale(0.9, 0.9);
+}
+
+.usercard .usercard__data .usercard-name .usercard-level.beginner {
+  background: #cccccc;
+  color: #4d4d4d;
+}
+
+.usercard .usercard__data .usercard-name .usercard-level.junior {
+  background: #16A2B2;
+}
+
+.usercard .usercard__data .usercard-name .usercard-level.senior {
+  background: #F32470;
+}
+
+.usercard .usercard__data .usercard-name .usercard-level.master {
+  background: #F32470;
+  -webkit-box-shadow: 0px 0px 8px #F32470;
+          box-shadow: 0px 0px 8px #F32470;
+}
+
+.usercard .usercard__data .usercard-name .usercard-username {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.usercard .usercard__data .usercard-name .usercard-username p.usercard-label-name {
+  font-size: 16px;
+  color: #595959;
+}
+
+.usercard .usercard__data .usercard-name .usercard-username a.usercard-label-id {
+  color: #51A0B4;
+  font-size: 12px;
+}
+
+.usercard .usercard__data ul.usercard-info {
+  margin-top: 6px;
+}
+
+.usercard .usercard__data ul.usercard-info li {
+  padding: 2px 0;
+}
+
+.usercard .usercard__data ul.usercard-info li label {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 6px;
+  color: #a6a6a6;
+  font-size: 13px;
+}
+
+.usercard .usercard__data ul.usercard-info li p {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 13px;
+  color: #595959;
+}
+
+.usercard .usercard__data ul.usercard-info .usercard-race {
+  display: inline-block;
+  vertical-align: middle;
+  min-width: 35%;
+}
+
+.usercard .usercard__data ul.usercard-info .usercard-coin {
+  display: inline-block;
+  vertical-align: middle;
+  min-width: 35%;
+}
+
+.usercard .usercard__data ul.usercard-info .usercard-gp {
+  display: inline-block;
+  vertical-align: middle;
+  min-width: 35%;
+}
+
+.usercard .usercard__data ul.usercard-info .usercard-donate {
+  display: inline-block;
+  vertical-align: middle;
+  min-width: 35%;
+}
+
+.usercard .usercard__data .usercard-achieve {
+  position: relative;
+  margin-top: 6px;
+  max-width: 200px;
+  height: 24px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.usercard .usercard__data .usercard-achieve .usercard-slick-controller {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.usercard .usercard__data .usercard-achieve .usercard-slick-controller button {
+  border: 0;
+  padding: 0;
+  background: transparent;
+  position: absolute;
+  opacity: .5;
+  border-radius: 50%;
+  width: 21px;
+  height: 21px;
+  color: #FFF;
+  background: #51A0B4;
+}
+
+.usercard .usercard__data .usercard-achieve .usercard-slick-controller button i {
+  font-size: 20px;
+}
+
+.usercard .usercard__data .usercard-achieve .usercard-slick-controller button:hover {
+  opacity: 1;
+}
+
+.usercard .usercard__data .usercard-achieve .usercard-slick-controller .usercard-slick-prev {
+  left: 0;
+}
+
+.usercard .usercard__data .usercard-achieve .usercard-slick-controller .usercard-slick-next {
+  right: 0;
+}
+
+.usercard .usercard__data .usercard-achieve .usercard-slick-item:hover + .usercard-slick-controller,
+.usercard .usercard__data .usercard-achieve .usercard-slick-controller:hover {
+  display: block;
+}
+
+.usercard .usercard__option {
+  clear: both;
+  border-top: 1px solid #d9d9d9;
+  border-radius: 0 0 4px 4px;
+  overflow: hidden;
+}
+
+.usercard .usercard__option a {
+  display: block;
+  float: left;
+  border-right: 1px solid #d9d9d9;
+  padding: 12px 0;
+  width: 50%;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.usercard .usercard__option a:hover {
+  background: #51A0B4;
+  border-right: 0;
+  text-decoration: none;
+}
+
+.usercard .usercard__option a:hover i, .usercard .usercard__option a:hover span {
+  color: #FFF;
+}
+
+.usercard .usercard__option a:last-child {
+  border: 0;
+}
+
+.usercard .usercard__option a i {
+  display: inline-block;
+  vertical-align: middle;
+  color: #bfbfbf;
+}
+
+.usercard .usercard__option a span {
+  display: inline-block;
+  vertical-align: middle;
+  color: gray;
+}
+
+.usercard .usercard__progress {
+  margin: 32% 0;
+}
+
+.usercard .slick-track {
+  margin-left: 0;
+}
+
+/*# sourceMappingURL=gamercard.css.map */

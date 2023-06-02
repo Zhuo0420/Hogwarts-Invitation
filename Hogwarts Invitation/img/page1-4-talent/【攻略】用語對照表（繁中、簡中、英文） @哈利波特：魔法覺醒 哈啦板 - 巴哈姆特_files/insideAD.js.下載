@@ -1,0 +1,91 @@
+googletag.cmd.push(function() {
+googletag.defineSlot('/1017768/AD2018032204', [1250, 160], 'div-gpt-ad-banner').addService(googletag.pubads());
+googletag.pubads().enableSingleRequest();
+googletag.enableServices();
+});
+
+function top_abanner1000(){
+document.write('<div id="div-gpt-ad-banner" style="min-height:160px;"></div>');
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-banner'); });
+}
+function rbuildingA(){
+var rbuildingA_ary = [];rbuildingA_ary[0] = [];
+rbuildingA_ary[0][0] = '<a href="https://asia.sega.com/sq123/cht/shopguide_tw/" target="_blank" class="a-mercy-d" data-mercy="" data-si="" data-ssn="240169"><img border=0 src="https://truth.bahamut.com.tw/s01/202304/7472809f4cfd9936efe4401af197410a.JPG"></a>';
+rbuildingA_ary[1] = [];
+rbuildingA_ary[1][0] = '<a href="https://ad.doubleclick.net/ddm/trackclk/N1313774.1921973GAMERTW/B29940386.366885269;dc_trk_aid=557915148;dc_trk_cid=191968949;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;ltd=;dc_tdv=1" target="_blank" class="a-mercy-d" data-mercy="" data-si="" data-ssn="240577"><img border=0 src="https://truth.bahamut.com.tw/s01/202305/7a5abe822a2edf948eb2ac6473f696d3.JPG"></a>';
+rbuildingA_ary[2] = [];
+rbuildingA_ary[2][0] = '<a href="https://cronous-online.valofe.com/event" target="_blank" class="a-mercy-d" data-mercy="" data-si="" data-ssn="241355"><img border=0 src="https://truth.bahamut.com.tw/s01/202305/2481b0ddeed4d009e49238aacc9a4186.JPG"></a>';
+rbuildingA_ary[3] = [];
+rbuildingA_ary[3][0] = '<a href="https://play.google.com/googleplaygames?&utm_source=apac_Med&utm_medium=offdis&utm_content=May1523&utm_campaign=GPG_Q2&pcampaignid=MKT-RPR-apac-tw-1605564-Med-offdis-gm-GPG_Q2-May1523-1x1-Bahamut_DR_Outerplane_PC_skyscraper_Sitevisitor_xdevice_HomePage" target="_blank" class="a-mercy-d" data-mercy="" data-si="" data-ssn="240267"><img border=0 src="https://truth.bahamut.com.tw/s01/202305/bc34006cf3424e3f54a3ba2f01e0a4c3.JPG"></a>';
+rbuildingA_ary[4] = [];
+rbuildingA_ary[4][0] = '<a href="https://tw.ncsoft.com/event/aion/230524_preorder/event.aspx" target="_blank" class="a-mercy-d" data-mercy="" data-si="" data-ssn="241389"><img border=0 src="https://truth.bahamut.com.tw/s01/202306/16ad5b5ebcecd19d10bb124131e503a9.JPG"></a>';
+var ik = getAdIndex(6, 5);
+if( 1 == rbuildingA_ary[ik].length ) {
+document.write(rbuildingA_ary[ik][0]);
+} else {
+document.write(rbuildingA_ary[ik][ ADmercy.ck(6, ik, rbuildingA_ary[ik].length) ]);
+}
+}
+function rbuildingGNN(){
+var rbuildingGNN_ary = [];rbuildingGNN_ary[0] = [];
+rbuildingGNN_ary[0][0] = '<a href="https://asia.sega.com/sq123/cht/shopguide_tw/" target="_blank" class="a-mercy-d" data-mercy="" data-si="" data-ssn="240169"><img border=0 src="https://truth.bahamut.com.tw/s01/202304/7472809f4cfd9936efe4401af197410a.JPG"></a>';
+rbuildingGNN_ary[1] = [];
+rbuildingGNN_ary[1][0] = '<a href="https://ad.doubleclick.net/ddm/trackclk/N1313774.1921973GAMERTW/B29940386.366885269;dc_trk_aid=557915148;dc_trk_cid=191968949;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;ltd=;dc_tdv=1" target="_blank" class="a-mercy-d" data-mercy="" data-si="" data-ssn="240577"><img border=0 src="https://truth.bahamut.com.tw/s01/202305/7a5abe822a2edf948eb2ac6473f696d3.JPG"></a>';
+rbuildingGNN_ary[2] = [];
+rbuildingGNN_ary[2][0] = '<a href="https://cronous-online.valofe.com/event" target="_blank" class="a-mercy-d" data-mercy="" data-si="" data-ssn="241355"><img border=0 src="https://truth.bahamut.com.tw/s01/202305/2481b0ddeed4d009e49238aacc9a4186.JPG"></a>';
+rbuildingGNN_ary[3] = [];
+rbuildingGNN_ary[3][0] = '<a href="https://play.google.com/googleplaygames?&utm_source=apac_Med&utm_medium=offdis&utm_content=May1523&utm_campaign=GPG_Q2&pcampaignid=MKT-RPR-apac-tw-1605564-Med-offdis-gm-GPG_Q2-May1523-1x1-Bahamut_DR_Outerplane_PC_skyscraper_Sitevisitor_xdevice_HomePage" target="_blank" class="a-mercy-d" data-mercy="" data-si="" data-ssn="240267"><img border=0 src="https://truth.bahamut.com.tw/s01/202305/bc34006cf3424e3f54a3ba2f01e0a4c3.JPG"></a>';
+rbuildingGNN_ary[4] = [];
+rbuildingGNN_ary[4][0] = '<a href="https://tw.ncsoft.com/event/aion/230524_preorder/event.aspx" target="_blank" class="a-mercy-d" data-mercy="" data-si="" data-ssn="241389"><img border=0 src="https://truth.bahamut.com.tw/s01/202306/16ad5b5ebcecd19d10bb124131e503a9.JPG"></a>';
+var ik = getAdIndex(1, 5);
+if( 1 == rbuildingGNN_ary[ik].length ) {
+document.write(rbuildingGNN_ary[ik][0]);
+} else {
+document.write(rbuildingGNN_ary[ik][ ADmercy.ck(1, ik, rbuildingGNN_ary[ik].length) ]);
+}
+}
+(function(window, $, undefined) {
+'use strict';
+function getIndex(adnum) {
+var adIndex = Math.floor(Math.random() * adnum);
+return toCode62(adIndex);
+}
+var mercyad = {
+ck: function(pos, m_index, adnum) {
+if( adnum > 1 ) {
+var get_ad_s = egg.cookie.get('ckBAHAADS'),
+adIndex,
+newList = {};
+if( !get_ad_s ) {
+adIndex = getIndex(adnum);
+newList = '{"'+pos+'":{"'+m_index+'":"'+adIndex+'"}}';
+} else {
+var adlist = JSON.parse(get_ad_s);
+if( typeof(adlist['"'+pos+'"']) === "undefined" ) {
+adIndex = getIndex(adnum);
+$.extend(adlist, JSON.parse('{"'+pos+'":{"'+m_index+'":"'+adIndex+'"}}'));
+} else {
+//有在記錄中
+if( adlist['"'+pos+'"']['"'+m_index+'"'] ) {
+adIndex = fromCode62(adlist['"'+pos+'"']['"'+m_index+'"']);
+if( adIndex < 0 ) {
+adIndex = Math.floor(Math.random() * adnum);
+} else {
+adIndex = ++adIndex % adnum;
+}
+adIndex = toCode62(adIndex);
+adlist['"'+pos+'"']['"'+m_index+'"'] = adIndex;
+} else {
+adIndex = getIndex(adnum);
+adlist['"'+pos+'"']['"'+m_index+'"'] = adIndex;
+}
+}
+newList = JSON.stringify(adlist);
+}
+document.cookie = 'ckBAHAADS=' + newList + ';expires=' + new Date().toDateString() + ' 23:59:59 UTC+0800;domain=.gamer.com.tw';
+return adIndex;
+}
+}
+};
+window.ADmercy = mercyad;
+})(window, jQuery);

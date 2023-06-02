@@ -1,0 +1,1262 @@
+@charset "UTF-8";
+.dialogify .float-left {
+  float: left;
+}
+
+.dialogify *.is-error {
+  color: #DE2427 !important;
+}
+
+.dialogify .tab-menu,
+.dialogify .dialogify .tab-menu {
+  display: table;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+.dialogify .tab-menu li,
+.dialogify .dialogify .tab-menu li {
+  display: inline;
+  position: relative;
+  float: left;
+  padding: 0;
+  width: 50%;
+  overflow: hidden;
+  color: #B3B3B3;
+  opacity: 0.8;
+  cursor: pointer;
+  z-index: 0;
+}
+
+.dialogify .tab-menu li a,
+.dialogify .dialogify .tab-menu li a {
+  display: block;
+  border-bottom: 1px solid #117e96;
+  font-size: 14px;
+  line-height: 40px;
+  color: rgba(76, 87, 102, 0.6);
+  text-decoration: none;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.dialogify .tab-menu li.active a,
+.dialogify .dialogify .tab-menu li.active a {
+  color: #00555f;
+}
+
+.dialogify .tab-menu li.tab-menu__item2.active ~ hr,
+.dialogify .tab-menu li.tab-menu__item2:hover ~ hr,
+.dialogify .dialogify .tab-menu li.tab-menu__item2.active ~ hr,
+.dialogify .dialogify .tab-menu li.tab-menu__item2:hover ~ hr {
+  left: 50%;
+}
+
+.dialogify .tab-menu li:first-child:hover ~ hr,
+.dialogify .dialogify .tab-menu li:first-child:hover ~ hr {
+  left: 0;
+}
+
+.dialogify .tab-menu hr,
+.dialogify .dialogify .tab-menu hr {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin: 0;
+  border: none;
+  height: 3px;
+  width: 50%;
+  background: #117e96;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.dialogify .tab-menu.tab-menu__3 li,
+.dialogify .dialogify .tab-menu.tab-menu__3 li {
+  width: 33.33%;
+}
+
+.dialogify .tab-menu.tab-menu__3 li.tab-menu__item3.active ~ hr,
+.dialogify .dialogify .tab-menu.tab-menu__3 li.tab-menu__item3.active ~ hr {
+  left: 66.66%;
+}
+
+.dialogify .tab-menu.tab-menu__3 li.tab-menu__item2.active ~ hr,
+.dialogify .dialogify .tab-menu.tab-menu__3 li.tab-menu__item2.active ~ hr {
+  left: 33.33%;
+}
+
+.dialogify .tab-menu.tab-menu__3 li.tab-menu__item3:hover ~ hr,
+.dialogify .dialogify .tab-menu.tab-menu__3 li.tab-menu__item3:hover ~ hr {
+  left: 66.66%;
+}
+
+.dialogify .tab-menu.tab-menu__3 li.tab-menu__item2:hover ~ hr,
+.dialogify .dialogify .tab-menu.tab-menu__3 li.tab-menu__item2:hover ~ hr {
+  left: 33.33%;
+}
+
+.dialogify .tab-menu.tab-menu__3 li.tab-menu__item1:hover ~ hr,
+.dialogify .dialogify .tab-menu.tab-menu__3 li.tab-menu__item1:hover ~ hr {
+  left: 0%;
+}
+
+.dialogify .tab-menu.tab-menu__3 hr,
+.dialogify .dialogify .tab-menu.tab-menu__3 hr {
+  width: 33.33%;
+}
+
+.dialogify .tab-wrapper {
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+.dialogify .tab-content {
+  padding-top: 30px;
+}
+
+.dialogify .tab-box {
+  position: relative;
+  margin: 20px auto 0;
+  padding: 0px 50px 20px;
+  min-height: 300px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow: auto;
+  overflow-x: hidden;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
+  background: #fff;
+  -webkit-animation: fadeup .2s .2s ease both;
+          animation: fadeup .2s .2s ease both;
+  opacity: 0;
+}
+
+.dialogify {
+  /*--dropzone上傳圖片--*/
+  /*--舊的上傳圖片樣式--*/
+}
+
+.dialogify .postaddimage .btn-box a.post__text-small {
+  float: left;
+  margin-top: 8px;
+  font-size: 13px;
+  font-weight: normal;
+  color: #117e96;
+}
+
+.dialogify .postaddimage .btn-box a.post__text-small:hover {
+  color: #126e7d;
+}
+
+.dialogify .postaddimage .btn-box a.post__text-small.is-error {
+  font-weight: normal;
+}
+
+.dialogify .postaddimage .btn-box span.post__text-small {
+  float: left;
+  margin-top: 8px;
+  margin-right: 5px;
+  font-size: 13px;
+  font-weight: normal;
+}
+
+.dialogify .postaddimage .uploadimage {
+  border: none;
+}
+
+.dialogify .postaddimage .uploadimage .upload-files .upload-files__body {
+  margin-bottom: 20px;
+  margin-top: 5px;
+  padding: 25px 0 15px;
+  text-align: center;
+}
+
+.dialogify .postaddimage .uploadimage .upload-files .upload-files__body input {
+  visibility: hidden;
+}
+
+.dialogify .postaddimage .uploadimage .upload-files .upload-files__body i {
+  position: absolute;
+  height: 64px;
+  color: transparent;
+  z-index: -1;
+  font-size: 60px;
+}
+
+.dialogify .postaddimage .uploadimage .upload-files .upload-files__body img.pointer-none {
+  width: 65px;
+}
+
+.dialogify .postaddimage .uploadimage .upload-files .upload-files__body span {
+  color: rgba(76, 87, 102, 0.6);
+  font-size: 12px;
+  display: block;
+  margin: 10px 0 8px;
+}
+
+.dialogify .postaddimage .uploadimage .upload-files .upload-files__body h3 {
+  color: #117e96;
+  margin-top: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.dialogify .postaddimage .uploadimage .upload-files .upload-files__body .btn {
+  background-color: #117e96;
+  color: #FFF;
+  opacity: 1;
+  -webkit-box-shadow: 0 8px 15px -6px rgba(86, 171, 189, 0.7), 0 4px 17px 0px rgba(0, 0, 0, 0.12), 0 2px 6px -2px rgba(143, 207, 220, 0.3);
+          box-shadow: 0 8px 15px -6px rgba(86, 171, 189, 0.7), 0 4px 17px 0px rgba(0, 0, 0, 0.12), 0 2px 6px -2px rgba(143, 207, 220, 0.3);
+}
+
+.dialogify .postaddimage .uploadimage .upload-files .upload-files__body .btn:hover {
+  background-color: #126e7d;
+}
+
+.dialogify .postaddimage .uploadimage .upload-files .upload-files__body .btn:active {
+  position: relative;
+  top: 2px;
+  opacity: 1;
+}
+
+.dialogify .postaddimage .uploadimage .upload-files .upload-files__body.active {
+  border: dashed 2px #117e96;
+}
+
+.dialogify .postaddimage .uploadimage .upload-files .upload-files__body.active i {
+  -webkit-box-shadow: 0 0 0 -3px #fff, 0 0 0 #DCDCDC, 0 0 0 -3px #fff, 0 0 0 #DCDCDC;
+          box-shadow: 0 0 0 -3px #fff, 0 0 0 #DCDCDC, 0 0 0 -3px #fff, 0 0 0 #DCDCDC;
+  -webkit-animation: file .5s ease both;
+          animation: file .5s ease both;
+}
+
+@-webkit-keyframes file {
+  50% {
+    -webkit-box-shadow: -8px 8px 0 -3px #fff, -8px 8px 0 #D5D5D5, -8px 8px 0 -3px #fff, -8px 8px 0 #D5D5D5;
+            box-shadow: -8px 8px 0 -3px #fff, -8px 8px 0 #D5D5D5, -8px 8px 0 -3px #fff, -8px 8px 0 #D5D5D5;
+  }
+  75%,
+  100% {
+    -webkit-box-shadow: -8px 8px 0 -3px #fff, -8px 8px 0 #DCDCDC, -16px 16px 0 -3px #fff, -16px 16px 0 #DCDCDC;
+            box-shadow: -8px 8px 0 -3px #fff, -8px 8px 0 #DCDCDC, -16px 16px 0 -3px #fff, -16px 16px 0 #DCDCDC;
+  }
+}
+
+@keyframes file {
+  50% {
+    -webkit-box-shadow: -8px 8px 0 -3px #fff, -8px 8px 0 #D5D5D5, -8px 8px 0 -3px #fff, -8px 8px 0 #D5D5D5;
+            box-shadow: -8px 8px 0 -3px #fff, -8px 8px 0 #D5D5D5, -8px 8px 0 -3px #fff, -8px 8px 0 #D5D5D5;
+  }
+  75%,
+  100% {
+    -webkit-box-shadow: -8px 8px 0 -3px #fff, -8px 8px 0 #DCDCDC, -16px 16px 0 -3px #fff, -16px 16px 0 #DCDCDC;
+            box-shadow: -8px 8px 0 -3px #fff, -8px 8px 0 #DCDCDC, -16px 16px 0 -3px #fff, -16px 16px 0 #DCDCDC;
+  }
+}
+
+.dialogify .postaddimage .uploadimage .upload-files .upload-files__body.active .pointer-none {
+  pointer-events: none;
+}
+
+.dialogify .postaddimage .uploadimage .upload-files footer {
+  width: 100%;
+  margin: 0 auto;
+  height: 0;
+}
+
+.dialogify .postaddimage .uploadimage .upload-files footer .list-files {
+  display: inline-block;
+  width: 90%;
+  margin: 20px 5%;
+  padding-left: 5px;
+  text-align: center;
+  overflow-x: hidden;
+  overflow-y: auto;
+  max-height: 240px;
+}
+
+.dialogify .postaddimage .uploadimage .upload-files footer .list-files::-webkit-scrollbar-track {
+  background-color: rgba(211, 211, 211, 0.25);
+}
+
+.dialogify .postaddimage .uploadimage .upload-files footer .list-files::-webkit-scrollbar {
+  width: 4px;
+  background-color: rgba(211, 211, 211, 0.25);
+}
+
+.dialogify .postaddimage .uploadimage .upload-files footer .list-files::-webkit-scrollbar-thumb {
+  background-color: rgba(17, 126, 150, 0.5);
+}
+
+.dialogify .postaddimage .uploadimage .upload-files footer .list-files .file {
+  width: 320px;
+  min-height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 0;
+  -webkit-animation: fade .35s ease both;
+          animation: fade .35s ease both;
+}
+
+.dialogify .postaddimage .uploadimage .upload-files footer .list-files .file .name {
+  font-size: 12px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 140px;
+  text-align: left;
+}
+
+.dialogify .postaddimage .uploadimage .upload-files footer .list-files .file .progress {
+  width: 130px;
+  height: 5px;
+  border: solid 1px lightgray;
+  border-radius: 2px;
+  background: -webkit-gradient(linear, right top, left top, from(rgba(17, 126, 150, 0.2)), to(rgba(17, 126, 150, 0.8))) no-repeat;
+  background: linear-gradient(to left, rgba(17, 126, 150, 0.2), rgba(17, 126, 150, 0.8)) no-repeat;
+  background-size: 100% 100%;
+}
+
+.dialogify .postaddimage .uploadimage .upload-files footer .list-files .file .progress.active {
+  -webkit-animation: progress 30s linear;
+          animation: progress 30s linear;
+}
+
+@-webkit-keyframes progress {
+  from {
+    background-size: 0 100%;
+  }
+  to {
+    background-size: 100% 100%;
+  }
+}
+
+@keyframes progress {
+  from {
+    background-size: 0 100%;
+  }
+  to {
+    background-size: 100% 100%;
+  }
+}
+
+.dialogify .postaddimage .uploadimage .upload-files footer .list-files .file .done {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  background: #117e96;
+  border-radius: 50%;
+  margin-left: -10px;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  position: relative;
+}
+
+.dialogify .postaddimage .uploadimage .upload-files footer .list-files .file .done.anim {
+  -webkit-animation: done1 .5s ease forwards;
+          animation: done1 .5s ease forwards;
+}
+
+.dialogify .postaddimage .uploadimage .upload-files footer .list-files .file .done.anim #path {
+  -webkit-animation: done2 2.5s .5s ease forwards;
+          animation: done2 2.5s .5s ease forwards;
+}
+
+.dialogify .postaddimage .uploadimage .upload-files footer .list-files .file .done #path {
+  stroke-dashoffset: 7387.59423828125;
+  stroke-dasharray: 7387.59423828125 7387.59423828125;
+  stroke: #fff;
+  fill: transparent;
+  stroke-width: 50px;
+}
+
+@-webkit-keyframes done2 {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes done2 {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@-webkit-keyframes done1 {
+  50% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: scale(0.25);
+            transform: scale(0.25);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+    opacity: 1;
+  }
+}
+
+@keyframes done1 {
+  50% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: scale(0.25);
+            transform: scale(0.25);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeup {
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeup {
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes faderight {
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes faderight {
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fade {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  to {
+    opacity: 1;
+  }
+}
+
+.dialogify .postaddimage .uploadimage-url .post__text-small {
+  margin-top: 0;
+}
+
+.dialogify .postaddimage .uploadimage-url .imgbox {
+  margin-top: 10px;
+}
+
+.dialogify .uploadimage-url .imgbox img {
+  margin-top: 10px;
+  max-width: 410px;
+  max-height: 275px;
+}
+
+.dialogify .uploadimage-home.tab-box {
+  padding: 0 10px 10px;
+  max-width: 508px;
+}
+
+.dialogify .uploadimage-home .uploadimage-home__btnbg {
+  content: '';
+  height: 100%;
+  max-height: 400px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(88%, rgba(255, 255, 255, 0)), color-stop(92%, rgba(255, 255, 255, 0.85)), color-stop(96%, #FFF));
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 88%, rgba(255, 255, 255, 0.85) 92%, #FFF 96%);
+  background-image: -webkit-linear-gradient(to bottom, rgba(255, 255, 255, 0) 88%, rgba(255, 255, 255, 0.85) 92%, #FFF 96%);
+  z-index: 2;
+  pointer-events: none;
+}
+
+.dialogify .uploadimage-home .uploadimage-home__btn {
+  position: absolute;
+  bottom: 0;
+  padding: 10px 0;
+  width: 100%;
+  color: #117e96;
+  font-size: 13px;
+  text-align: center;
+  cursor: pointer;
+  pointer-events: auto;
+  text-decoration: none;
+}
+
+.dialogify .uploadimage-home .uploadimage-home__btn:hover {
+  color: #126e7d;
+}
+
+.dialogify .uploadimage-home .uploadimage-home__list {
+  display: inline-block;
+  width: 100%;
+  overflow: hidden;
+}
+
+.dialogify .uploadimage-home .uploadimage-home__list.uploadimage-home__list__maxheight {
+  overflow-y: visible;
+  position: relative;
+}
+
+.dialogify .uploadimage-home .uploadimage-home__item {
+  display: inline-block;
+  position: relative;
+  float: left;
+  padding: 5px;
+  width: 25%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.dialogify .uploadimage-home .uploadimage-home__item .imgbox {
+  position: relative;
+  border: 1px solid #D9D9D9;
+  width: 100%;
+  padding-top: 100%;
+  overflow: hidden;
+}
+
+.dialogify .uploadimage-home .uploadimage-home__item .imgbox img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  max-width: 100%;
+}
+
+.dialogify .uploadimage-home .uploadimage-home__item.is-active .imgbox {
+  border: 1px solid #11AAC1;
+}
+
+.dialogify .uploadimage-home .uploadimage-home__item.is-active .imgbox:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-bottom: 100%;
+  width: 100%;
+  background-color: #11AAC1;
+  opacity: .1;
+}
+
+.dialogify .uploadimage-home .uploadimage-home__item:hover .imgbox {
+  border-color: #11AAC1;
+  outline: 2px solid #11AAC1;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+}
+
+.dialogify .uploadimage-home .uploadimage-home__item:hover .imgbox img {
+  max-width: 101%;
+  width: 101%;
+  -webkit-transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
+}
+
+.dialogify .uploadimage-home .uploadimage-home__item .check-group {
+  position: absolute;
+  top: 14px;
+  left: 15px;
+}
+
+.dialogify .dropzone {
+  border: none;
+  width: 508px;
+  padding: 0 10px 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.dialogify .dropzone * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.dialogify .dropzone.dropzone.dz-clickable {
+  cursor: pointer;
+}
+
+.dialogify .dropzone.dropzone.dz-clickable * {
+  cursor: default;
+}
+
+.dialogify .dropzone.dropzone.dz-clickable .dz-message {
+  cursor: pointer;
+  margin: 1.5em 0;
+}
+
+.dialogify .dropzone.dropzone.dz-clickable .dz-message * {
+  cursor: pointer;
+}
+
+.dialogify .dropzone.dz-started .dz-message {
+  display: none;
+}
+
+.dialogify .dropzone.dz-drag-hover {
+  border: dashed 2px #117e96;
+}
+
+.dialogify .dropzone.dz-drag-hover .dz-message {
+  opacity: 0.5;
+}
+
+.dialogify .dropzone .dz-message {
+  padding: 25px 0 15px;
+  text-align: center;
+  pointer-events: none;
+}
+
+.dialogify .dropzone .dz-message img {
+  width: 72px;
+  height: 72px;
+  margin-left: 5px;
+  opacity: 0.8;
+}
+
+.dialogify .dropzone .dz-message h3 {
+  color: #117e96;
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.dialogify .dropzone .dz-message span {
+  color: rgba(76, 87, 102, 0.6);
+  font-size: 12px;
+  display: block;
+  margin: 10px 0 8px;
+}
+
+.dialogify .dropzone .dz-message a.btn {
+  margin-top: 10px;
+  font-size: 14px;
+  padding: 7px 24px;
+  background-color: #117e96;
+  color: #FFF;
+  opacity: 1;
+  -webkit-box-shadow: 0 8px 15px -6px rgba(86, 171, 189, 0.7), 0 4px 17px 0px rgba(0, 0, 0, 0.12), 0 2px 6px -2px rgba(143, 207, 220, 0.3);
+          box-shadow: 0 8px 15px -6px rgba(86, 171, 189, 0.7), 0 4px 17px 0px rgba(0, 0, 0, 0.12), 0 2px 6px -2px rgba(143, 207, 220, 0.3);
+}
+
+.dialogify .dropzone .dz-message p {
+  margin-top: 20px;
+  font-size: 12px;
+}
+
+.dialogify .dropzone .dz-preview {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  float: left;
+  margin: 0;
+  padding: 5px;
+  width: 25%;
+}
+
+.dialogify .dropzone .dz-preview:hover {
+  z-index: 1000;
+}
+
+.dialogify .dropzone .dz-preview:hover .dz-details {
+  opacity: 1;
+}
+
+.dialogify .dropzone .dz-preview:hover .dz-image img {
+  -webkit-transform: scale(1.05, 1.05) translate(-50%, -50%);
+          transform: scale(1.05, 1.05) translate(-50%, -50%);
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+}
+
+.dialogify .dropzone .dz-preview.dz-file-preview .dz-image {
+  border-radius: 0px;
+  background: #999;
+  background: -webkit-gradient(linear, left top, left bottom, from(#eee), to(#ddd));
+  background: linear-gradient(to bottom, #eee, #ddd);
+}
+
+.dialogify .dropzone .dz-preview.dz-file-preview .dz-details {
+  opacity: 1;
+}
+
+.dialogify .dropzone .dz-preview.dz-image-preview {
+  background: #FFF;
+}
+
+.dialogify .dropzone .dz-preview.dz-image-preview .dz-details {
+  -webkit-transition: opacity 0.2s linear;
+  transition: opacity 0.2s linear;
+}
+
+.dialogify .dropzone .dz-preview .dz-remove {
+  font-size: 12px;
+  text-align: center;
+  display: block;
+  cursor: pointer;
+  border: none;
+}
+
+.dialogify .dropzone .dz-preview .dz-remove:hover {
+  text-decoration: underline;
+}
+
+.dialogify .dropzone .dz-preview .dz-image {
+  position: relative;
+  display: block;
+  z-index: 10;
+  padding-top: 100%;
+  border: 1px solid #D9D9D9;
+  overflow: hidden;
+  border-radius: 0;
+  width: 100%;
+  height: auto;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+.dialogify .dropzone .dz-preview .dz-image img {
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+}
+
+.dialogify .dropzone .dz-preview.dz-processing .dz-progress {
+  opacity: 1;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.dialogify .dropzone .dz-preview.dz-complete .dz-progress {
+  opacity: 0;
+  -webkit-transition: opacity 0.4s ease-in;
+  transition: opacity 0.4s ease-in;
+}
+
+.dialogify .dropzone .dz-preview:not(.dz-processing) .dz-progress {
+  -webkit-animation: pulse 6s ease infinite;
+          animation: pulse 6s ease infinite;
+}
+
+.dialogify .dropzone .dz-preview .dz-progress {
+  opacity: 1;
+  z-index: 1000;
+  pointer-events: none;
+  position: absolute;
+  height: 8px;
+  left: 50%;
+  top: 50%;
+  margin-top: 0px;
+  width: 80px;
+  margin-left: -40px;
+  background: rgba(255, 255, 255, 0.9);
+  -webkit-transform: scale(1);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.dialogify .dropzone .dz-preview .dz-progress .dz-upload {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  -webkit-transition: width 300ms ease-in-out;
+  transition: width 300ms ease-in-out;
+  background: #117e96;
+  background: linear-gradient(135deg, #13aeab 0%, #117e96 75%);
+}
+
+.dialogify .dropzone .dz-preview .dz-details {
+  z-index: 20;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  font-size: 13px;
+  min-width: 100%;
+  max-width: 100%;
+  padding: 1.5em 1em;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.9);
+  line-height: 150%;
+}
+
+.dialogify .dropzone .dz-preview .dz-details .dz-filename {
+  display: none;
+  white-space: nowrap;
+}
+
+.dialogify .dropzone .dz-preview .dz-details .dz-filename:hover span {
+  border: 1px solid rgba(200, 200, 200, 0.8);
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.dialogify .dropzone .dz-preview .dz-details .dz-filename:not(:hover) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.dialogify .dropzone .dz-preview .dz-details .dz-filename:not(:hover) span {
+  border: 1px solid transparent;
+}
+
+.dialogify .dropzone .dz-preview .dz-details .dz-filename span {
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 0 0.4em;
+  border-radius: 3px;
+}
+
+.dialogify .dropzone .dz-preview .dz-details .dz-size {
+  margin-bottom: 1em;
+  font-size: 12px;
+  font-weight: bold;
+  color: #464646;
+}
+
+.dialogify .dropzone .dz-preview .dz-details .dz-size strong {
+  font-weight: bold;
+}
+
+.dialogify .dropzone .dz-preview .dz-details .dz-size span {
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 0 0.4em;
+  border-radius: 3px;
+}
+
+.dialogify .dropzone .dz-preview .dz-success-mark, .dialogify .dropzone .dz-preview .dz-error-mark {
+  pointer-events: none;
+  opacity: 0;
+  z-index: 500;
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  margin-left: -18px;
+  margin-top: -18px;
+}
+
+.dialogify .dropzone .dz-preview .dz-success-mark svg, .dialogify .dropzone .dz-preview .dz-error-mark svg {
+  display: block;
+  width: 36px;
+  height: 36px;
+}
+
+.dialogify .dropzone .dz-preview.dz-success .dz-success-mark {
+  -webkit-animation: passing-through 3s cubic-bezier(0.77, 0, 0.175, 1);
+          animation: passing-through 3s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.dialogify .dropzone .dz-preview.dz-error.dz-complete .dz-image {
+  border-radius: 0;
+  background: #eedada;
+  border-color: #DE2427;
+}
+
+.dialogify .dropzone .dz-preview.dz-error.dz-complete .dz-error-message {
+  pointer-events: none;
+  z-index: 1000;
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+  display: block;
+  top: 90px;
+  left: 0;
+  width: 100%;
+  font-size: 12px;
+  border-radius: 3px;
+  background: rgba(190, 38, 38, 0.8);
+  padding: 5px 7px;
+  color: white;
+  text-align: center;
+}
+
+.dialogify .dropzone .dz-preview.dz-error.dz-complete .dz-error-message:after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: 56px;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid rgba(190, 38, 38, 0.8);
+}
+
+.dialogify .dropzone .dz-preview.dz-error .dz-error-mark {
+  opacity: 1;
+  -webkit-animation: slide-in 3s cubic-bezier(0.77, 0, 0.175, 1);
+          animation: slide-in 3s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.dialogify .dropzone .dz-preview.dz-error .dz-error-mark svg {
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  border-radius: 99em;
+  background: rgba(255, 255, 255, 0.6);
+  margin-left: -1px;
+  margin-top: -1px;
+}
+
+.dialogify .dropzone .dz-preview.dz-error .dz-error-mark svg g {
+  fill: #DF2427;
+  fill-opacity: 0.8;
+}
+
+.dialogify .dropzone .dz-preview.dz-error:hover .dz-error-message {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+@-webkit-keyframes passing-through {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(40px);
+    transform: translateY(40px);
+  }
+  30%, 70% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(-40px);
+    transform: translateY(-40px);
+  }
+}
+
+@keyframes passing-through {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(40px);
+    transform: translateY(40px);
+  }
+  30%, 70% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(-40px);
+    transform: translateY(-40px);
+  }
+}
+
+@-webkit-keyframes slide-in {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(40px);
+    transform: translateY(40px);
+  }
+  30% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+}
+
+@keyframes slide-in {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(40px);
+    transform: translateY(40px);
+  }
+  30% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  10% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  20% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  10% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  20% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+.dialogify .uploadimage-old__item {
+  margin: 10px 0;
+}
+
+.dialogify .uploadimage-old input[type="file"] {
+  display: none;
+}
+
+.dialogify .uploadimage-old-path, .dialogify .uploadimage-old-path.form-control {
+  display: inline-block;
+  margin: 0;
+  padding: 10px;
+  float: left;
+  width: calc(100% - 90px);
+  min-width: 300px;
+  max-width: 320px;
+  height: 35px;
+  font-style: italic;
+  border-radius: 3px 0 0 3px;
+  border-right: none;
+  font-size: 13px;
+  color: rgba(76, 87, 102, 0.6);
+}
+
+.dialogify .uploadimage-old {
+  display: inline-block;
+  padding: 10px 12px;
+  width: 90px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 0 3px 3px 0;
+  background: #117e96;
+  font-size: 13px;
+  color: #FFF;
+}
+
+.dialogify .uploadimage-old:hover, .dialogify .uploadimage-old:hover, .dialogify .uploadimage-old:active {
+  background: #126e7d;
+}
+
+.dialogify .uploadimage-old__btn {
+  margin-top: 8px;
+  font-size: 13px;
+  color: #117e96;
+}
+
+.dialogify .uploadimage-old__btn:hover {
+  text-decoration: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.dialogify .uploadimage-old__btn i {
+  margin-left: 3px;
+}
+
+.dialogify .editor-toolbar__outerbox.is-hidden {
+  display: inline-block;
+}
+
+.dialogify .form-control {
+  margin: 10px 0;
+  border: 1px solid #D9D9D9;
+  border-radius: 3px;
+  padding: 8px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  background-color: #FFF;
+  background-image: none;
+  font-size: 14px;
+  color: #00555f;
+}
+
+.dialogify .form-control.is-error {
+  border-color: #DE2427 !important;
+  color: #DE2427 !important;
+}
+
+.dialogify .form-control:focus {
+  outline: none;
+  border-color: #117e96;
+}
+
+.dialogify .form-control::-webkit-input-placeholder, .dialogify .form-control::-moz-placeholder, .dialogify .form-control:-ms-input-placeholder, .dialogify .form-control:-moz-placeholder {
+  color: #B3B3B3 !important;
+}
+
+.dialogify .post__text-small {
+  margin-top: 10px;
+  font-size: 12px;
+  color: rgba(76, 87, 102, 0.6);
+  font-weight: normal;
+}
+
+.dialogify .input-box {
+  position: relative;
+}
+
+.dialogify .input-box input.form-control {
+  display: block;
+  position: relative;
+  padding-right: 30px;
+}
+
+.dialogify .input-box a.clearall {
+  display: none;
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  z-index: 2;
+  width: 15px;
+  height: 15px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.dialogify .input-box a.clearall:before {
+  content: '\f00d';
+  margin: auto;
+  border-radius: 50%;
+  background-color: transparent;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  color: #DE2427;
+  font-size: 15px;
+  line-height: 1;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.dialogify .input-box a.clearall.is-active {
+  display: block;
+}
+
+#crop_block > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#cropImage {
+  max-width: 100%;
+  max-height: 300px;
+}
+
+#crop_block {
+  margin-top: 0;
+  max-width: 640px;
+}
+
+#crop_block p {
+  margin-bottom: 8px;
+  margin-top: 0;
+  font-size: 15px;
+}
+
+#cropPreview {
+  position: relative;
+  width: 180px;
+  padding-left: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+#cropPreview > div {
+  border: 1px solid #e5e5e5;
+  width: 180px;
+  height: 180px;
+  overflow: hidden;
+}
+
+#cropPreview small {
+  display: block;
+  font-size: 12px;
+  color: rgba(76, 87, 102, 0.6);
+  padding: 5px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  #cropPreview {
+    display: none !important;
+  }
+  #crop_block {
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+/*# sourceMappingURL=dialogify_insertpic.css.map */

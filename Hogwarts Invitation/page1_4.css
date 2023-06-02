@@ -42,11 +42,59 @@ hr{
     border: 2px solid white;
     border-radius: 5px;
 }
-.level{
-    height: 15vh;
+.talent-intro{
+    display: flex;
+    flex-direction: column;
     width: 70vw;
     text-align: left;
+    justify-content: center;
+    align-items: center;
     font-size: 25px;
     color: white;
-    border: 2px solid white;
+    /* border: 2px solid white; */
 }
+
+.level{
+    width: 70vw;
+    text-align: left;
+}
+
+.icon-bar{
+    display: flex;
+    gap: 50px;
+}
+.icon-bar img{
+    cursor: pointer;
+    height: 150px;
+    width: 150px;
+    border: 1px solid white;
+    border-radius: 500px;
+}
+.icon{
+    display: flex;
+    flex-direction: column;
+}
+
+.clickme{
+    /* background-color:#fc9; */
+    /* padding: 5px; */
+    /* width: 100px; */
+    cursor: pointer;
+    text-align: center;
+    }
+    
+    .showText{
+    /* background-color:#f90; */
+    /* width: 20vw; */
+    max-height: 0;
+    opacity: 0;/*透明度*/
+    transition: 0.6s;
+    position: relative;
+    left: 300px;
+    }
+    
+    .clickme:focus + .showText{
+    opacity: 1;
+    padding: 20px;
+    max-height: 100%;
+    }
