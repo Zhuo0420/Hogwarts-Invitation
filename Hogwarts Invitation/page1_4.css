@@ -1,100 +1,182 @@
+.item:nth-child(2){
+    height: auto;
+}
 .talent{
-    display: flex;
+    display: grid;
+    grid-template-areas: 
+    "Main . stroage";
     width: 100vw;
+    overflow: hidden;
+    justify-content: center;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
 }
 .section-bar{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    gap: 10px;
-    width: 20vw;
-}
-.bar-chart{
-    width: 15px;
-    height: 100px;
-    border: 1px solid white;
-}
-.content{
-    display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 70vw;
-    /* background-color: brown; */
+    position: absolute;
+    width: 10vw;
+    height: 85vh;
+    /* background-color: aqua; */
     gap: 20px;
 }
-.content-header{
-    width: 70vw;
-    text-align: left;
-    font-size: 50px;
-    color: white;
+.bar-chart{
+    background-color: white;
+    width: 10px;
+    height: 100px;
 }
-.intro{
-    width: 70vw;
-    text-align: center;
-    font-size: 25px;
-    border: 2px solid white;
-}
-hr{
-    width: 70vw;
-    border: 2px solid white;
-    border-radius: 5px;
-}
-.talent-intro{
-    display: flex;
+section{
+    grid-area: stroage;
+    display: none;
     flex-direction: column;
-    width: 70vw;
-    text-align: left;
     justify-content: center;
     align-items: center;
-    font-size: 25px;
+    width: 100vw;
+    gap: 25px;
+}
+.actived{
+    grid-area: Main;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    gap: 25px;
+}
+.talent-header{
+    width: 80vw;
     color: white;
-    /* border: 2px solid white; */
+    font-size: 36px;
+    animation: fade-in 2s ease;
 }
-
+.talent-intro{
+    width: 80vw;
+    color: white;
+    font-size: 20px;
+    border: 1px solid white;
+    padding: 10px;
+    position: relative;
+    animation: fade-down 1s ease;
+}
+hr{
+    width: 85vw;
+}
+.icon-field{
+    width: 80vw;
+    /* border: 1px solid white; */
+}
 .level{
-    width: 70vw;
-    text-align: left;
+    color: white;
+    font-size: 24px;
 }
-
 .icon-bar{
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     gap: 50px;
 }
-.icon-bar img{
-    cursor: pointer;
-    height: 150px;
-    width: 150px;
+.icon{
+    height: 200px;
+    width: 100px;
+}
+.iconBtn{
+    position: relative;
+    height: 100px;
+    width: 100px;
+    animation: icon_up 1s ease;
+}
+.iconBtn img{
+    height: 100px;
+    width: 100px;
     border: 1px solid white;
     border-radius: 500px;
 }
-.icon{
+.showText{
     display: flex;
-    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    padding-left: 50px;
+    position: relative;
+    color: white;
+    width: 0vw;
+    height: 0px;
+    border: 1px solid white;
+    border-left: 0px;
+    border-radius: 0px 500px 500px 0px;
+    opacity: 0;
+    left: 50px;
+}
+p{
+    text-align: left;
+    opacity: 0;
 }
 
-.clickme{
-    /* background-color:#fc9; */
-    /* padding: 5px; */
-    /* width: 100px; */
-    cursor: pointer;
-    text-align: center;
-    }
-    
-    .showText{
-    /* background-color:#f90; */
-    /* width: 20vw; */
-    max-height: 0;
-    opacity: 0;/*透明度*/
-    transition: 0.6s;
-    position: relative;
-    left: 300px;
-    }
-    
-    .clickme:focus + .showText{
+.iconBtn:focus + .showText{
     opacity: 1;
-    padding: 20px;
-    max-height: 100%;
+    width: 25vw;
+    height: 100px;
+    animation: text_span 2s ease;
+    animation-delay: 0.9s;
+    transition-delay: 0.9s;
+}
+.iconBtn:focus + .showText p{
+    opacity: 1;
+    animation: fade-in 2s ease;
+    animation-delay: 1.5s;
+    transition-delay: 1.5s;
+}
+
+.iconBtn:focus{
+    position: relative;
+    top: 100px;
+    animation: icon_down 1s ease;
+}
+
+@keyframes icon_down {
+    0% {
+        top: 0px;
     }
+
+    100% {
+        top: 100px;
+    }
+}
+
+@keyframes icon_up {
+    0% {
+        top: 100px;
+    }
+
+    100% {
+        top: 0px;
+    }
+}
+
+@keyframes text_span{
+    0% {
+        width: 0vw;
+    }
+    100% {
+        width: 25vw;
+    }
+}
+@keyframes fade-in{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes fade-down{
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}

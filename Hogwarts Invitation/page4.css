@@ -24,7 +24,7 @@
 .dev-bg img {
     position: fixed;
     left: 0;
-    bottom: 0;
+    bottom: 0vh;
     height: 100vh;
     width: 100vw;
     opacity: 0;
@@ -63,6 +63,7 @@
 }
 .dev-logo{
     margin-top: 10vh;
+    margin-bottom: 10vh;
     height: 45vh;
 }
 .dev-logo a img {
