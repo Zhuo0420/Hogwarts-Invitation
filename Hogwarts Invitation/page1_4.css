@@ -27,7 +27,7 @@
 .bar-chart{
     background-color: white;
     width: 10px;
-    height: 100px;
+    height: 120px;
     opacity: 0.5;
 }
 .bar-chart:first-child{
@@ -81,53 +81,60 @@ hr{
     gap: 50px;
 }
 .icon{
-    height: 100px;
-    /* width: 100px; */
+    height: 120px;
+    /* width: 120px; */
     z-index: 2;
 }
 .iconBtn{
-    height: 100px;
-    width: 100px;
+    height: 120px;
+    width: 120px;
     animation: icon_up 1s ease;
 }
 .iconBtn img{
-    height: 100px;
-    width: 100px;
+    height: 120px;
+    width: 120px;
     border: 1px solid white;
     border-radius: 500px;
 }
 .showText{
     display: flex;
-    /* justify-content: center; */
-    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* align-items: center; */
     position: relative;
     color: white;
     width: 0px;
-    height: 100px;
-    top: -100px;
+    height: 120px;
+    top: -120px;
     border: 1px solid white;
     border-left: 0px;
     border-radius: 0px 500px 500px 0px;
     opacity: 0;
-    left: 50px;
-    margin-right: 50px;
+    left: 70px;
+    margin-right: 70px;
+    padding-left: 50px;
     animation: text_close 0.5s ease-out;
     transition: 1s;
     z-index: -1;   
 }
+.showText-header{
+    font-size: 22px;
+    font-weight: bold;
+}
 p{
-    position: relative;
-    left: 50px;
     text-align: left;
     opacity: 0;
     /* animation: text_close 1s ease; */
+    cursor: default;
+    font-size: 18px;
 }
 
 .iconBtn:focus + .showText{
     /* display: flex; */
     opacity: 1;
-    width: 350px;
-    height: 100px;
+    width: 400px;
+    height: 120px;
+    
     animation: text_span 1s ease;
     /* animation-delay: 0.5s;
     transition-delay: 0.5s; */
@@ -153,13 +160,13 @@ p{
     }
 
     100% {
-        top: 100px;
+        top: 120px;
     }
 }
 
 @keyframes icon_up {
     0% {
-        top: 100px;
+        top: 120px;
     }
 
     100% {
@@ -172,12 +179,12 @@ p{
         width: 0vw;
     }
     100% {
-        width: 350px;
+        width: 400px;
     }
 }
 @keyframes text_close{
     0% {
-        width: 350px;
+        width: 400px;
     }
     100% {
         width: 0vw;
