@@ -28,12 +28,12 @@ main div{
     /* display: grid;   
     grid-template-rows: 10% 80% 10%;  
     grid-template-columns: 100%; */
-    width: 50vw;
+    width: 70vw;
     height: 200vh;
     /* justify-items: center; */
     align-items: center;
     justify-content: space-around;
-    z-index: 6;
+    z-index: 0;
     display: flex;
     flex-direction: column;
     /* gap: 5px; */
