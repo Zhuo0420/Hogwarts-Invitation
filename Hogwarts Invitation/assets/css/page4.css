@@ -42,7 +42,7 @@
     width: 100vw;
     height: 100vh;
     opacity: 70%;
-    background: radial-gradient(closest-side, #d2d2d2, #383737, #000000 80%);
+    background: radial-gradient(closest-side, #ffffff, #3a3a3a 50%, #000000 80%);
     z-index: 3;
 }
 
@@ -59,7 +59,9 @@
 }
 
 .dev-info p {
-    background-color: rgba(0, 0, 0, 0.75);
+    background: radial-gradient(ellipse at center bottom, rgb(0, 0, 0),transparent 95%);
+    border-radius: 200px 200px 0 0;
+    padding: 20px;
 }
 .dev-logo{
     margin-top: 10vh;
@@ -75,8 +77,8 @@
     height: 10vh;
 }
 .dev-intro hr {
-    border-color: white;
-    border: 2px solid white;
+    border: 1.5px solid white;
+    box-shadow: 0 20px 50px white;
 }
 
 .dev-games {

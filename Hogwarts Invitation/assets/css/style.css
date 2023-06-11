@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+
 * {
     box-sizing: border-box;
     padding: 1;
@@ -59,12 +61,18 @@ html {
     color: white;
     border-radius: 100px;
     z-index: 2;
-    text-shadow: 0 0 30px rgb(0, 0, 0);
+    text-shadow: 0 0 20px rgb(0, 0, 0);
     /* background: radial-gradient(rgba(0, 0, 0, 0.623), transparent 80%); */
 }
 
-.p1 {
-    font-size: 25px;
+h1 {
+    font-size: 50px;
+    font-weight:bold;
+    font-family: 'Yusei Magic', sans-serif;
+}
+
+p {
+    margin: 5px;
 }
 
 #myCanvas {

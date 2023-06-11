@@ -11,7 +11,7 @@ html {
 
 .container{
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
     "header"
     "main"
     "footer";
