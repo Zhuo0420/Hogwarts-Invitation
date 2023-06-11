@@ -1,6 +1,6 @@
 .item:nth-child(2) {
     grid-area: main;
-    background: black url("./assets/media/img/page5bg.svg") no-repeat center/cover;
+    background: black url("../media/img/page5bg.svg") no-repeat center/cover;
     height: 75vh;
     width: 100vw;
     display: grid;

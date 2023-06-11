@@ -27,7 +27,7 @@ html {
     text-align: center;
     line-height: 20vh;
     color: white;
-    background-image: url('./assets/media/img/headerImg.png');
+    background-image: url('../media/img/headerImg.png');
     background-size: 150px;
     background-repeat: no-repeat;
     background-position: 0.5vw;
