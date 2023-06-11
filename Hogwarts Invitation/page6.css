@@ -23,7 +23,6 @@ hr{
     flex-direction: row;
     width: 85vw;
     justify-content: space-evenly;
-    align-items: center;
     margin-top: 50px;
 }
 .headshot{
