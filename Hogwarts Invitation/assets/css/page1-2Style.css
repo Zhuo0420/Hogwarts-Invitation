@@ -29,7 +29,7 @@
 }
 
 .mask{
-    background-color: black;
+    background-color: rgb(29, 30, 24);
     width: 90vw;
     height: calc(70vw/1.6);
     flex-basis: calc(70vw/1.6);
@@ -62,24 +62,24 @@
 @keyframes fadeLeftToRight{
     from{
         left: 0vw;
-        background: linear-gradient(90deg, rgba(0, 0, 0, 0.5), black 75%);
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgb(29, 30, 24) 75%);
     }
     to{
         right: 0;
         /* width: 0vw; */
         clip-path: polygon(100% 0%, 100% 0%, 100% 100%, 100% 100%);
-        background: linear-gradient(90deg, rgba(0, 0, 0, 0), black 50% );
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0), rgb(29, 30, 24) 50% );
     }
 }
 @keyframes fadeRightToLeft{
     0%{
         right: 0vw;
-        background: linear-gradient(90deg, black 75%, rgba(0, 0, 0, 0.5));
+        background: linear-gradient(90deg, rgb(29, 30, 24) 75%, rgba(0, 0, 0, 0.5));
     }
     100%{
         left: 0;
         /* width: 0vw; */
         clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
-        background: linear-gradient(90deg, black 50%, rgba(0, 0, 0, 0));
+        background: linear-gradient(90deg, rgb(29, 30, 24) 50%, rgba(0, 0, 0, 0));
     }
 }

@@ -3,6 +3,12 @@
     padding: 1;
     margin: 0;
 }
+
+body,
+html {
+    background-color: rgb(29, 30, 24);
+}
+
 .container{
     display: grid;
     grid-template-areas: 
@@ -12,7 +18,7 @@
 }
 .item:first-child{
     grid-area: header;
-    background-color: midnightblue;
+    background-color: transparent;
     height: 15vh;
     width: 100vw; 
     text-align: center;
@@ -25,14 +31,14 @@
 }
 .item:nth-child(2){
     grid-area: main;
-    background-color: black;
+    background-color: transparent;
     height: 75vh;
     width: 100vw;
     display: grid;
 }
 .item:nth-child(3){
     grid-area: footer;
-    background-color: midnightblue;
+    background: linear-gradient(rgb(0, 0, 0), rgb(18, 19, 14) 30%);
     height: 10vh;
     width: 100vw;
     /* z-index: 999; */
