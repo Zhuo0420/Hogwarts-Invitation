@@ -1,0 +1,308 @@
+/* 首頁搜尋  */
+#index_search form.gsc-search-box,
+#index_search form.gsc-search-box table,
+#index_search form.gsc-search-box tbody,
+#index_search form.gsc-search-box tr,
+#index_search form.gsc-search-box td,
+#index_search form.gsc-search-box div,
+#index_search form.gsc-search-box input {
+  /* display: block !important; */
+  margin: 0 !important;
+  border: 0 !important;
+  padding: 0 !important;
+}
+#index_search form.gsc-search-box {
+  position: relative;
+  top: 10px;
+  width: 360px;
+  height: 30px !important;
+}
+/* 隱藏 google 資訊 */
+#index_search form.gsc-search-box .gsc-branding,
+#index_search form.gsc-search-box .gsc-clear-button {
+  display: none !important;
+}
+
+/* 輸入框 */
+#index_search form.gsc-search-box td.gsc-input {
+  display: block;
+}
+#index_search form.gsc-search-box td.gsc-input .gsc-input-box {
+  background: transparent;
+}
+#index_search form.gsc-search-box .gsc-input-box input.gsc-input {
+  border-radius: 4px 0px 0px 4px !important;
+  padding: 6px !important;
+  width: 330px !important;
+  height: 30px !important;
+  background: #FFF !important;
+  box-sizing: border-box;
+}
+
+.gsc-input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: transparent;
+}
+.gsc-input::-moz-placeholder { /* Firefox 19+ */
+  color: transparent;
+}
+.gsc-input:-ms-input-placeholder { /* IE 10+ */
+  color: transparent;
+}
+
+/* 搜尋送出鈕 */
+#index_search form.gsc-search-box .gsc-search-button {
+  /* position: relative; 用 relative firefox td border-radius 無法運作*/
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 0px 4px 4px 0px !important;
+  width: 30px;
+  min-width: 0 !important;
+  height: 30px;
+  background: #51A1B4;
+}
+#index_search form.gsc-search-box .gsc-search-button:before {
+  content: "\f002";
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  font-family: 'FontAwesome';
+  font-size: 14px;
+  color: #FFF;
+}
+#index_search form.gsc-search-box .gsc-search-button input.gsc-search-button {
+  opacity: 0;
+  display: block;
+  width: 30px !important;
+  height: 30px !important;
+}
+#index_search form.gsc-search-box .gsc-search-button button.gsc-search-button-v2 {
+  opacity: 0;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+}
+
+
+
+/* Navbar 的搜尋列 */
+.TOP-search {
+  float: left;
+  /*margin-left: 24px;*/
+  position: relative;
+  top: 5px;
+  left: 24px;
+}
+.TOP-search #___gcse_0{
+  height: 26px;
+  background: #ffffff;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.TOP-search form.gsc-search-box,
+.TOP-search form.gsc-search-box table,
+.TOP-search form.gsc-search-box tbody,
+.TOP-search form.gsc-search-box tr,
+.TOP-search form.gsc-search-box td,
+.TOP-search form.gsc-search-box div,
+.TOP-search form.gsc-search-box input {
+  /* display: block !important; */
+  margin: 0 !important;
+  border: 0 !important;
+  padding: 0 !important;
+}
+.TOP-search form.gsc-search-box {
+  position: relative;
+  /*
+  top: 8px;
+  width: 200px;
+  height: 20px !important;
+  */
+  width: 208px;
+  height: 26px !important;
+}
+/* 隱藏 google 資訊 */
+.TOP-search form.gsc-search-box .gsc-branding,
+.TOP-search form.gsc-search-box .gsc-clear-button {
+  display: none !important;
+}
+.TOP-search form.gsc-search-box .gsib_b {
+  display: none !important;
+}
+
+/* 輸入框 */
+.TOP-search form.gsc-search-box td.gsc-input {
+  display: block;
+}
+.TOP-search form.gsc-search-box td.gsc-input .gsc-input-box {
+  height: auto !important;
+  background: transparent;
+}
+.TOP-search form.gsc-search-box .gsc-input-box input.gsc-input {
+  /*border-radius: 2px 0px 0px 2px !important;
+  padding: 2px 4px !important;
+  height: 20px !important;*/
+  width: 180px !important;
+  background: #FFF !important;
+  box-sizing: border-box;
+  font-size: 13px !important;
+
+  border-radius: 4px 0 0 4px !important;
+  padding: 6px!important;
+  height: 26px!important;
+}
+/* 搜尋送出鈕 */
+.TOP-search form.gsc-search-box .gsc-search-button {
+  position: relative;
+/*  border-radius: 0px 2px 2px 0px !important;
+  width: 20px;*/
+  background: #FFF;
+  border-radius: 0 4px 4px 0!important;
+  width: 26px;
+}
+.TOP-search form.gsc-search-box .gsc-search-button:before {
+  content: "\f002";
+  position: absolute;
+  top: 4px;
+  left: 6px;
+  font-family: 'FontAwesome';
+  color: #117e96;
+  font-size: 16px;
+  line-height: 1;
+}
+.TOP-search form.gsc-search-box .gsc-search-button:hover:before {
+  color: #126e7d;;
+}
+.TOP-search form.gsc-search-box .gsc-search-button input.gsc-search-button {
+  opacity: 0;
+  display: block;
+  width: 20px !important;
+  height: 20px !important;
+}
+.TOP-search form.gsc-search-box .gsc-search-button button.gsc-search-button-v2 {
+  opacity: 0;
+  padding: 0;
+/*  width: 20px;
+  height: 20px;*/
+  width: 26px;
+  height: 26px;
+  border: none;
+}
+
+
+/* 搜尋結果列表 */
+#BH-search form.gsc-search-box,
+#BH-search form.gsc-search-box table,
+#BH-search form.gsc-search-box tbody,
+#BH-search form.gsc-search-box tr,
+#BH-search form.gsc-search-box td,
+#BH-search form.gsc-search-box div,
+#BH-search form.gsc-search-box input {
+  /* display: block !important; */
+  margin: 0 !important;
+  border: 0 !important;
+  padding: 0 !important;
+}
+#BH-search form.gsc-search-box {
+  position: relative;
+/*   border: 1px solid hsl(0,0%,85%) !important;
+  border-radius: 4px; */
+  width: 100%;
+  height: 30px !important;
+}
+/* 隱藏 google 資訊 */
+#BH-search form.gsc-search-box .gsc-branding,
+#BH-search form.gsc-search-box .gsc-clear-button {
+  display: none !important;
+}
+#BH-search form.gsc-search-box .gsib_b {
+  display: none !important;
+}
+
+/* 輸入框 */
+#BH-search form.gsc-search-box td.gsc-input {
+  display: block;
+}
+#BH-search form.gsc-search-box td.gsc-input .gsc-input-box {
+  height: auto !important;
+  background: transparent;
+}
+#BH-search form.gsc-search-box .gsc-input-box input.gsc-input {
+  border-radius: 4px 0px 0px 4px !important;
+  padding: 6px !important;
+  width: 100% !important;
+  height: 30px !important;
+  background: #FFF !important;
+  box-sizing: border-box;
+}
+/* 搜尋送出鈕 */
+#BH-search form.gsc-search-box td.gsc-search-button {
+  /* position: relative; 用 relative firefox td border-radius 無法運作*/
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 0px 4px 4px 0px !important;
+  width: 30px;
+  height: 30px;
+  background: #51A1B4;
+}
+#BH-search form.gsc-search-box .gsc-search-button:before {
+  content: "\f002";
+  position: absolute;
+  /*top: 6px;
+  left: 6px;
+  font-size: 18px;
+  color: #FFF;*/
+  font-family: 'FontAwesome';
+  top: 4px;
+  left: 6px;
+  color: $colorPrimary;
+  font-size: 16px;
+  line-height: 1;
+}
+#BH-search form.gsc-search-box .gsc-search-button input.gsc-search-button {
+  opacity: 0;
+  display: block;
+  width: 30px !important;
+  height: 30px !important;
+}
+#BH-search form.gsc-search-box td.gsc-search-button .gsc-search-button-v2{
+  opacity: 0;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+}
+/*--全站天的searchbar keyword--*/
+.gsc-completion-container{
+    background: rgba(255, 255, 255, 0.97);
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1), 0 1px 8px rgba(0, 0, 0, 0.05), 0 2px 20px rgba(0, 0, 0, 0.1);
+    border: none;
+    border-radius: 3px;
+}
+.gssb_a {
+    padding: 1px 10px;
+    color: #f44336;
+    font-weight: bold;
+}
+.gsc-completion-selected{
+  background: #117e96!important;
+}
+.gsc-completion-selected td span, .gsc-completion-selected td span b{
+    color: #FFF!important;
+    font-size: normal;
+}
+.gssb_a b{
+  color: #464646;
+}
+.gssb_a, .gssb_a td{
+    line-height: 24px!important;
+    font-size: 14px!important;
+}
+@media (max-width: 700px) {
+  .TOP-search form.gsc-search-box .gsc-input-box input.gsc-input{
+    width: 164px !important;
+  }
+  .TOP-search form.gsc-search-box{
+    width: 192px;
+  }
+}

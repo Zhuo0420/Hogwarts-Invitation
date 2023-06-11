@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>開放世界</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="item">
+            <a href="index.html"><div class="top"></div></a>
+            <div class="manu" onmouseover="switchMenu( this, 'SubMenu', 'MouseOver' )" onmouseout="hideMenu()">
+                <canvas id="myCanvas" width="50" height="50" ></canvas>
+                <div id="SubMenu" class="sub-menu">
+                    <div class="page1Manu">
+                        <div><a href="page1_1.html">開放世界</a></div>
+                        <div><a href="page1_2.html">捏臉系統</a></div>
+                        <div><a href="page1_3.html">法術戰鬥</a></div>
+                        <div><a href="page1_4.html">天賦系統</a></div>
+                    </div>
+                    <div><a href="page2.html" >媒體牆</a></div>
+                    <div><a href="page3.html" >建議配備</a></div>
+                    <div><a href="page4.html" >開發商簡介</a></div>
+                    <div><a href="page5.html" >購買連結</a></div>
+                    <div><a href="page6.html" >組員介紹</a></div>
+                </div>
+        </header>
+        <main class="item">
+
+        </main>
+        <footer class="item">
+
+        </footer>
+    </div>
+    
+</body>
+</html>
+
+<script>
+    var a = document.getElementById("myCanvas");
+    var ctx = a.getContext('2d');
+    ctx.lineWidth = 3;
+    ctx.strokeStyle = 'white';
+    ctx.beginPath();
+    ctx.moveTo(10,10);
+    ctx.lineTo(40, 10);
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.moveTo(10,20);
+    ctx.lineTo(40,20);
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.moveTo(10,30);
+    ctx.lineTo(40,30);
+    ctx.stroke();
+</script>
+<script>
+    var VisibleMenu = ''; // 記錄目前顯示的子選單的 ID
+
+    // 顯示或隱藏子選單
+    function switchMenu( theMainMenu, theSubMenu, theEvent ){
+        var SubMenu = document.getElementById( theSubMenu );
+        if( SubMenu.style.display == 'none' ){ // 顯示子選單
+            SubMenu.style.display = 'flex';
+            // hideMenu(); // 隱藏子選單
+            VisibleMenu = theSubMenu;
+        }
+        else{ // 隱藏子選單
+            if( theEvent != 'MouseOver' || VisibleMenu != theSubMenu ){
+                SubMenu.style.display = 'none';
+                VisibleMenu = '';
+            }
+        }
+    }
+
+    // 隱藏子選單
+    function hideMenu(){
+        if( VisibleMenu != '' ){
+            document.getElementById( VisibleMenu ).style.display = 'none';
+        }
+        VisibleMenu = '';
+    }
+
+    function Menu(SubMenu){
+        subMenu.style.display == 'flex';
+    }
+</script>

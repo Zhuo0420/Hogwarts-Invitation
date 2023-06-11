@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>建議配備</title>
+    <link rel="stylesheet" href="pagestyle.css">
+    <link rel="stylesheet" href="page3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="item">
+            <a href="index.html"><div class="top"></div></a>
+            <div class="manu" onmouseover="switchMenu( this, 'SubMenu', 'MouseOver' )" onmouseout="hideMenu()">
+                <canvas id="myCanvas" width="50" height="50" ></canvas>
+                <div id="SubMenu" class="sub-menu">
+                    <div class="page1Manu">
+                        <div><a href="page1_1.html">開放世界</a></div>
+                        <div><a href="page1_2.html">捏臉系統</a></div>
+                        <div><a href="page1_3.html">法術戰鬥</a></div>
+                        <div><a href="page1_4.html">天賦系統</a></div>
+                    </div>
+                    <div><a href="page2.html" >媒體牆</a></div>
+                    <div><a href="page3.html" >建議配備</a></div>
+                    <div><a href="page4.html" >開發商簡介</a></div>
+                    <div><a href="page5.html" >購買連結</a></div>
+                    <div><a href="page6.html" >組員介紹</a></div>
+                </div>
+        </header>
+        <main class="item">
+            <div class="spec-form">
+                <table class="table">
+                    <thead class="thead">
+                        <tr>
+                            <th>
+                                <p class="active" id = "low-btn">最低/低規格</p>
+                                <p id = "high-btn">建議/高規格</p>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody class="tbody">
+                        <tr>
+                            <th>OS</th>
+                            <td>64-位元 Windows 10</td>
+                        </tr>
+                        <tr>
+                            <th>CPU</th>
+                            <td>Intel Core i5-6600 (3.3 GHz) 或 AMD Ryzen 5 1400 (3.2 GHz)</td>
+                        </tr>
+                        <tr>
+                            <th>RAM</th>
+                            <td>16 GB</td>
+                        </tr>
+                        <tr>
+                            <th>GPU</th>
+                            <td>NVIDIA GeForce GTX 960 4GB or AMD Radeon RX 470 4GB</td>
+                        </tr>
+                        <tr>
+                            <th>DX 版本</th>
+                            <td>DX 12</td>
+                        </tr>
+                        <tr>
+                            <th>儲存體</th>
+                            <td>85 GB HDD</td>
+                        </tr>
+                        <tr>
+                            <th>附註</th>
+                            <td>SSD（首選）、HDD（支援）、720p / 30 fps、低品質設定</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+        <footer class="item">
+
+        </footer>
+    </div>
+    
+</body>
+</html>
+
+<script>
+    var a = document.getElementById("myCanvas");
+    var ctx = a.getContext('2d');
+    ctx.lineWidth = 3;
+    ctx.strokeStyle = 'white';
+    ctx.beginPath();
+    ctx.moveTo(10,10);
+    ctx.lineTo(40, 10);
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.moveTo(10,20);
+    ctx.lineTo(40,20);
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.moveTo(10,30);
+    ctx.lineTo(40,30);
+    ctx.stroke();
+</script>
+<script>
+    var VisibleMenu = ''; // 記錄目前顯示的子選單的 ID
+
+    // 顯示或隱藏子選單
+    function switchMenu( theMainMenu, theSubMenu, theEvent ){
+        var SubMenu = document.getElementById( theSubMenu );
+        if( SubMenu.style.display == 'none' ){ // 顯示子選單
+            SubMenu.style.display = 'flex';
+            // hideMenu(); // 隱藏子選單
+            VisibleMenu = theSubMenu;
+        }
+        else{ // 隱藏子選單
+            if( theEvent != 'MouseOver' || VisibleMenu != theSubMenu ){
+                SubMenu.style.display = 'none';
+                VisibleMenu = '';
+            }
+        }
+    }
+
+    // 隱藏子選單
+    function hideMenu(){
+        if( VisibleMenu != '' ){
+            document.getElementById( VisibleMenu ).style.display = 'none';
+        }
+        VisibleMenu = '';
+    }
+
+    function Menu(SubMenu){
+        subMenu.style.display == 'flex';
+    }
+</script>
+<script>
+    var spec_display = document.getElementsByTagName("td"),
+        low_spec_btn = document.getElementById("low-btn"),
+        high_spec_btn = document.getElementById("high-btn");
+    var low_spec = [
+        "64-位元 Windows 10",
+        "Intel Core i5-6600 (3.3 GHz) 或 AMD Ryzen 5 1400 (3.2 GHz)",
+        "16 GB",
+        "NVIDIA GeForce GTX 960 4GB or AMD Radeon RX 470 4GB",
+        "DX 12",
+        "85 GB HDD",
+        "SSD（首選）、HDD（支援）、720p / 30 fps、低品質設定",
+    ];
+    var high_spec=[
+        "64-位元 Windows 10",
+        "Intel i7-8700 (3.2 GHz) 或 AMD Ryzen 5 3600 (3.6 GHz)",
+        "16 GB",
+        "NVIDIA GeForce 1080 Ti 或 AMD Radeon RX 5700 XT 或 INTEL Arc A770",
+        "DX 12",
+        "85 GB SSD",
+        "SSD、1080p / 60 fps、高品質設定",
+    ]
+    low_spec_btn.addEventListener('click',function(){
+        low_spec_btn.className = "active";
+        high_spec_btn.className = "";
+        for(var i = 0; i < spec_display.length; i++){
+            spec_display[i].textContent = low_spec[i];
+        }
+    })
+    high_spec_btn.addEventListener('click',function(){
+        low_spec_btn.className = "";
+        high_spec_btn.className = "active";
+        for(var i = 0; i < spec_display.length; i++){
+            spec_display[i].textContent = high_spec[i];
+        }
+    })
+</script>

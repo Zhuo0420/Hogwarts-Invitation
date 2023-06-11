@@ -1,0 +1,160 @@
+:root {
+  --primary: #117E96;
+  --secondary: #009CAD;
+  --primary-light: #11AAC1;
+  --primary-dark: #126E7D;
+  --primary-text: #2D2D2D;
+  --secondary-text: #464646;
+  --tertiary-text: #8C8C8C;
+  --quaternary-text: #B3B3B3;
+  --primary-border: #E5E5E5;
+  --secondary-border: #D9D9D9;
+  --base-bg: #FFFFFF;
+  --b1-bg: #F8F8F8;
+  --f1-bg: #FFFFFF;
+  --f2-bg: #F3F3F3;
+  --warning: #F44336;
+  --purewhite: #FFFFFF;
+}
+
+html[data-theme=dark] {
+  --primary: #00B0B6;
+  --secondary: #00B0B6;
+  --primary-light: #33CCCC;
+  --primary-dark: #009CAD;
+  --primary-text: #F7F7F7;
+  --secondary-text: #C7C6CB;
+  --tertiary-text: #A7A6AD;
+  --quaternary-text: #A7A6AD;
+  --primary-border: #444444;
+  --secondary-border: #444444;
+  --base-bg: #1C1C1C;
+  --b1-bg: #111111;
+  --f1-bg: #272728;
+  --f2-bg: #444444;
+  --warning: #F25C62;
+  --purewhite: #FFFFFF;
+}
+
+:root {
+  --shadow-quicktool-btn: rgba(0,0,0,0.4);
+}
+:root .baha_quicktool .quicktool {
+  box-shadow: 0 0 4px -1px var(--shadow-quicktool-btn);
+}
+
+html[data-theme=dark] {
+  --shadow-quicktool-btn: rgba(0,0,0,0.75);
+}
+html[data-theme=dark] .baha_quicktool .quicktool {
+  box-shadow: 0 0 4px 0px var(--shadow-quicktool-btn);
+}
+
+.baha_quicktool {
+  display: flex;
+  flex-direction: column;
+  width: 60px;
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 10;
+  font-size: 13px;
+  gap: 8px 0;
+}
+.baha_quicktool .quicktool {
+  background: var(--f1-bg);
+  border-radius: 5px;
+  text-align: center;
+  overflow: hidden;
+}
+.baha_quicktool .quicktool.iconbtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 0;
+  cursor: pointer;
+}
+.baha_quicktool .quicktool.iconbtn svg {
+  width: 26px;
+  height: 26px;
+  fill: var(--quaternary-text);
+}
+.baha_quicktool .quicktool.iconbtn.reload svg {
+  width: 24px;
+}
+.baha_quicktool .quicktool.iconbtn:hover {
+  background: var(--primary);
+}
+.baha_quicktool .quicktool.iconbtn:hover svg {
+  fill: var(--purewhite);
+}
+.baha_quicktool .quicktool.serve_elevator {
+  cursor: pointer;
+}
+.baha_quicktool .quicktool.serve_elevator .serve_floor {
+  padding: 8px 6px;
+  color: var(--tertiary-text);
+}
+.baha_quicktool .quicktool.serve_elevator .serve_floor:hover {
+  background: var(--primary);
+  color: var(--purewhite);
+}
+.baha_quicktool .quicktool.jumpfloor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 8px 6px;
+  box-sizing: border-box;
+  gap: 8px 0;
+}
+.baha_quicktool .quicktool.jumpfloor input {
+  border: 1px solid var(--secondary-border);
+  border-radius: 3px;
+  padding: 3px;
+  text-align: center;
+  font-size: 12px;
+  background: var(--base-bg);
+  color: var(--primary-text);
+}
+.baha_quicktool .quicktool.jumpfloor input:focus {
+  border-color: var(--primary);
+}
+.baha_quicktool .quicktool.jumpfloor button {
+  padding: 2px;
+  border-radius: 3px;
+  color: var(--tertiary-text);
+  border: 1px solid var(--primary-border);
+  background: var(--f1-bg);
+}
+.baha_quicktool .quicktool.jumpfloor button:hover {
+  background: var(--primary);
+  color: var(--purewhite);
+}
+.baha_quicktool .quicktool.extension {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7px 6px;
+  box-sizing: border-box;
+  color: var(--tertiary-text);
+  min-height: 54px;
+  cursor: pointer;
+}
+.baha_quicktool .quicktool.extension:hover {
+  background: var(--primary);
+  color: var(--purewhite);
+}
+
+@media (max-width: 540px) {
+  .baha_quicktool {
+    width: 54px;
+    right: 10px;
+    bottom: 70px;
+  }
+  .baha_quicktool .quicktool {
+    opacity: 0.97;
+  }
+  .baha_quicktool .quicktool.iconbtn {
+    padding: 13px 0;
+  }
+}

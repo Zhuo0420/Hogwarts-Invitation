@@ -1,0 +1,159 @@
+table.bahaRte td, th {
+    font-size: 12px;
+    color: black;
+}
+
+.bahaRte_btn_over {
+    background-color: #b8eaec;
+    border: solid 1px #6fb6b9;
+}
+.bahaRte_btn_out {
+    background-color: transparent;
+    border: solid 1px transparent;
+}
+
+div.bahaRte_popup {
+    background: #FFFFFF;
+    border: 1px solid #a7c7c8;
+    position: absolute;
+    z-index: 100;
+}
+
+div.bahaRte_dialog {
+    background-color: #FFFFFF;
+    border: 1px solid #a7c7c8;
+}
+
+p.bahaRte_title {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 32px;
+    background: #e5f7f8;
+    color: #484b4b;
+    text-indent: 10px;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+div.bahaRte_intxt {
+    padding: 10px;
+    font-size: 12px;
+    text-align: left;
+    color: black;
+}
+
+p.bahaRte_btns {
+    line-height: 32px;
+    background: #e5f7f8;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+input.bahaRte_btn {
+    margin: 5px;
+    width: 100px;
+    line-height: 20px;
+}
+
+input.bahaRte_txt {
+    margin: 5px;
+    line-height: 20px;
+}
+
+td.bhrte_chbtn {
+    font-weight: bold;
+    text-decoration: underline;
+    color: blue;
+    padding-right: 8px;
+    background: no-repeat center right;
+}
+
+textarea.bhrte_source {
+    padding-left: 4px;
+    padding-top: 4px;
+    overflow-y: scroll;
+    display: none;
+    font-family: Arial;
+    font-size: 15px;
+    border: none 0px;
+    resize: none;
+    /*color:black;
+     background-color:white;*/
+}
+
+span.bhrte_tip {
+    background-color: #FFFFE1;
+    border: solid 1px gray;
+    position: absolute;
+    font-size: 10pt;
+    padding: 2px;
+    z-index: 110;
+}
+span.bhrte_tipmask {
+    background-color: #333333;
+    border: solid 1px #333333;
+    position: absolute;
+    font-size: 10pt;
+    padding: 2px;
+    z-index: 109;
+}
+
+div#_bhrte_imageList{ height:385px; overflow:auto;}
+table.bhrte_imagelist td { text-align:center; width:123px; padding:10px; vertical-align:top;}
+/*table.bhrte_imagelist img { padding:3px;}*/
+table.bhrte_imagelist a{ border: solid 1px white; display:block;}
+table.bhrte_imagelist a:hover{ border: solid 1px #FF6600;}
+table.bhrte_guildimagelist td{ width:153px !important;}
+
+
+table#_bhrteMenuTable td{
+    cursor:pointer;
+    background-color: white;
+    border: solid 1px white;
+}
+table#_bhrteMenuTable td:hover{
+    background-color: #b8eaec;
+    border: solid 1px #6fb6b9;
+}
+table#_bhrteSubMenuTable td{
+    cursor:pointer;
+    background-color: white;
+    border: solid 1px white;
+}
+table#_bhrteSubMenuTable td:hover{
+    background-color: #b8eaec;
+    border: solid 1px #6fb6b9;
+}
+
+.editor-resizer {
+  width: 100%;
+  height: 5px;
+  /*position: absolute;
+  right: 0px;
+  bottom: 0;
+  left: 0;*/
+  cursor: n-resize;
+  z-index: 1;
+  background-image: url(https://i2.bahamut.com.tw/editor/resizer.jpg);
+  /*background-position: right bottom;
+  background-repeat: no-repeat;*/
+  border: none 0px;
+  padding:0px;
+  margin:0px;
+}
+
+/* --------------------全站燈箱(新)----------------- */
+.BH-popup{ background:#FFFFFF !important; border:1px solid #a7c7c8; color:#484b4b !important;}
+.BH-popup .BH-poptitle{ font-size:16px; font-weight:bold; line-height:32px; background:#e5f7f8; color:#484b4b; text-indent:10px; margin:0; padding:0;text-align:left; _padding:5px 0;}
+.BH-popup .BH-popintxt{ padding:10px; font-size:12px;text-align:left;}
+.BH-popup .BH-popbtns{ line-height:32px; background:#e5f7f8; text-align:center; padding:0; margin:0;}
+.BH-popbtns button{ margin:5px; line-height:20px;}
+.BH-popup a{ color:#FF0000;}
+.BH-popup input, .BH-popup button, .BH-popup textarea{ border:1px solid #999999 !important; background-color:#FFFFFF !important; background-image:none !important; color: #484b4b !important;}
+
+.BH-poptb1{ width:90%; margin:5px auto 0 auto;}
+.BH-poptb1 td{ padding:5px;}
+.BH-poptb1 input{ margin-right:5px;}
+

@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>開放世界</title>
-    <link rel="stylesheet" href="pageStyle.css">
-    <link rel="stylesheet" href="page6.css">
+    <link rel="stylesheet" href="./assets/css/pageStyle.css">
+    <link rel="stylesheet" href="./assets/css/page6.css">
 </head>
+
 <body>
     <div class="container">
         <header class="item">
-            <a href="index.html"><div class="top"></div></a>
+            <a href="index.html">
+                <div class="top"></div>
+            </a>
             <div class="manu" onmouseover="switchMenu( this, 'SubMenu', 'MouseOver' )" onmouseout="hideMenu()">
-                <canvas id="myCanvas" width="50" height="50" ></canvas>
+                <canvas id="myCanvas" width="50" height="50"></canvas>
                 <div id="SubMenu" class="sub-menu">
                     <div class="page1Manu">
                         <div><a href="page1_1.html">開放世界</a></div>
@@ -21,11 +25,11 @@
                         <div><a href="page1_3.html">法術戰鬥</a></div>
                         <div><a href="page1_4.html">天賦系統</a></div>
                     </div>
-                    <div><a href="page2.html" >媒體牆</a></div>
-                    <div><a href="page3.html" >建議配備</a></div>
-                    <div><a href="page4.html" >開發商簡介</a></div>
-                    <div><a href="page5.html" >購買連結</a></div>
-                    <div><a href="page6.html" >組員介紹</a></div>
+                    <div><a href="page2.html">媒體牆</a></div>
+                    <div><a href="page3.html">建議配備</a></div>
+                    <div><a href="page4.html">開發商簡介</a></div>
+                    <div><a href="page5.html">購買連結</a></div>
+                    <div><a href="page6.html">組員介紹</a></div>
                 </div>
         </header>
         <main class="item">
@@ -39,14 +43,14 @@
                 <hr>
                 <div class="member-intro">
                     <div class="member">
-                        <div class="headshot"><img src="/img/member/1102065.jpg" alt=""></div>
+                        <div class="headshot"><img src="./assets/media/img/member/1102065.jpg" alt=""></div>
                         <div class="self-intro">
                             <h1>1102065 游竣捷</h1>
                             <h2>程式碼撰寫</h2>
                         </div>
                     </div>
                     <div class="member">
-                        <div class="headshot"><img src="/img/member/1100621.png" alt=""></div>
+                        <div class="headshot"><img src="./assets/media/img/member/1100621.png" alt=""></div>
                         <div class="self-intro">
                             <h1>1100621 廖建驊</h1>
                             <h2>美術設計</h2>
@@ -54,14 +58,14 @@
                         </div>
                     </div>
                     <div class="member">
-                        <div class="headshot"><img src="/img/member/1112020.jpg" alt=""></div>
+                        <div class="headshot"><img src="./assets/media/img/member/1112020.jpg" alt=""></div>
                         <div class="self-intro">
-                            <h1>1112020  官昕</h1>
+                            <h1>1112020 官昕</h1>
                             <h2>資料彙整</h2>
                         </div>
                     </div>
                     <div class="member">
-                        <div class="headshot"><img src="/img/member/" alt=""></div>
+                        <div class="headshot"><img src="./assets/media/img/member/" alt=""></div>
                         <div class="self-intro">
                             <h1>1112003 卓惠琳</h1>
                             <h2>程式碼撰寫</h2>
@@ -74,127 +78,8 @@
 
         </footer>
     </div>
-    
+
 </body>
+
 </html>
-
-<script>
-    var a = document.getElementById("myCanvas");
-    var ctx = a.getContext('2d');
-    ctx.lineWidth = 3;
-    ctx.strokeStyle = 'white';
-    ctx.beginPath();
-    ctx.moveTo(10,10);
-    ctx.lineTo(40, 10);
-    ctx.stroke();
-
-    ctx.beginPath();
-    ctx.moveTo(10,20);
-    ctx.lineTo(40,20);
-    ctx.stroke();
-
-    ctx.beginPath();
-    ctx.moveTo(10,30);
-    ctx.lineTo(40,30);
-    ctx.stroke();
-</script>
-<script>
-    var VisibleMenu = ''; // 記錄目前顯示的子選單的 ID
-
-    // 顯示或隱藏子選單
-    function switchMenu( theMainMenu, theSubMenu, theEvent ){
-        var SubMenu = document.getElementById( theSubMenu );
-        if( SubMenu.style.display == 'none' ){ // 顯示子選單
-            SubMenu.style.display = 'flex';
-            // hideMenu(); // 隱藏子選單
-            VisibleMenu = theSubMenu;
-        }
-        else{ // 隱藏子選單
-            if( theEvent != 'MouseOver' || VisibleMenu != theSubMenu ){
-                SubMenu.style.display = 'none';
-                VisibleMenu = '';
-            }
-        }
-    }
-
-    // 隱藏子選單
-    function hideMenu(){
-        if( VisibleMenu != '' ){
-            document.getElementById( VisibleMenu ).style.display = 'none';
-        }
-        VisibleMenu = '';
-    }
-
-    function Menu(SubMenu){
-        subMenu.style.display == 'flex';
-    }
-</script>
-<script>
-    var bars = document.getElementsByClassName("bar-chart");
-    var section = document.getElementsByTagName("section");
-    var index = 0;
-    bars[0].addEventListener("click", function(){
-        for(var i = 0; i < bars.length; i++){
-            bars[i].style.opacity = 0.5;
-            section[i].className = "inactived";
-        }
-        index = 0;
-        bars[0].style.opacity= 1;
-        section[0].className = "actived";
-    })
-    bars[1].addEventListener("click", function(){
-        for(var i = 0; i < bars.length; i++){
-            bars[i].style.opacity = 0.5; 
-            section[i].className = "inactived";
-        }
-        index = 0;
-        bars[1].style.opacity= 1;
-        section[1].className = "actived";
-    })
-    bars[2].addEventListener("click", function(){
-        for(var i = 0; i < bars.length; i++){
-            bars[i].style.opacity = 0.5;
-            section[i].className = "inactived";
-        }
-        index = 0;
-        bars[2].style.opacity= 1;
-        section[2].className = "actived";
-    })
-    bars[3].addEventListener("click", function(){
-        for(var i = 0; i < bars.length; i++){
-            bars[i].style.opacity = 0.5;
-            section[i].className = "inactived";
-        }
-        index = 0;
-        bars[3].style.opacity= 1;
-        section[3].className = "actived";
-    })
-    window.addEventListener("wheel", function(event){
-        if (event.deltaY < 0)
-        {
-            for(var i = 0; i < bars.length; i++){
-            bars[i].style.opacity = 0.5;
-            section[i].className = "inactived";
-            }
-            index -= 1;
-            if(index < 0){
-                index = section.length-1;
-            }
-            bars[index].style.opacity= 1;
-            section[index].className = "actived";
-        }
-        else if (event.deltaY > 0)
-        {
-            for(var i = 0; i < bars.length; i++){
-            bars[i].style.opacity = 0.5;
-            section[i].className = "inactived";
-            }
-            index += 1;
-            if(index >= section.length){
-                index = 0;
-            }
-            bars[index].style.opacity= 1;
-            section[index].className = "actived";
-        }
-    })
-</script>
+<script src="./assets/js/menu.js"></script>

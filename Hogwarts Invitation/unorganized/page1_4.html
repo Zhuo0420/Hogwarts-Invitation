@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>天賦系統</title>
+    <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <link rel="stylesheet" href="pageStyle.css">
+    <link rel="stylesheet" href="page1_4.css">
+</head>
+<body>
+    <div class="container">
+        <header class="item">
+            <a href="index.html"><div class="top"></div></a>
+            <div class="manu" onmouseover="switchMenu( this, 'SubMenu', 'MouseOver' )" onmouseout="hideMenu()">
+                <canvas id="myCanvas" width="50" height="50" ></canvas>
+                <div id="SubMenu" class="sub-menu">
+                    <div class="page1Manu">
+                        <div><a href="page1_1.html">開放世界</a></div>
+                        <div><a href="page1_2.html">捏臉系統</a></div>
+                        <div><a href="page1_3.html">法術戰鬥</a></div>
+                        <div><a href="page1_4.html">天賦系統</a></div>
+                    </div>
+                    <div><a href="page2.html" >媒體牆</a></div>
+                    <div><a href="page3.html" >建議配備</a></div>
+                    <div><a href="page4.html" >開發商簡介</a></div>
+                    <div><a href="page5.html" >購買連結</a></div>
+                    <div><a href="page6.html" >組員介紹</a></div>
+                </div>
+        </header>
+        <main class="item">
+            <div class="talent">
+                <div class = "section-bar">
+                    <div class = "bar-chart"></div>
+                    <div class = "bar-chart"></div>
+                    <div class = "bar-chart"></div>
+                    <div class = "bar-chart"></div>
+                    <div class = "bar-chart"></div>
+                    <div class = "bar-chart"></div>
+                </div>
+                <section class="actived">
+                    <div class="talent-header">天賦系統</div>
+                    <div class="talent-intro">天賦能夠賦予咒語或是道具更強大的效果藉此讓玩法更豐富，更能因此發展出許多流派
+                        天賦一共有48個<br>最多卻只有36點天賦值，因此天賦是無法點滿的，一旦確認就無法重製天賦
+                        </div>
+                </section>
+                <!-- Spells -->
+                <section class="inactived">
+                    <div class="talent-header">咒語</div>
+                    <hr>
+                    <div class="icon-field">
+                        <div class="level">Lv.5</div>
+                        <div class="icon-bar">
+                            <div class="icon">
+                                <div class="iconBtn" tabindex="0">
+                                    <img src="./img/page1-4-talent/Spells/IncendioMastery.png" alt="">
+                                </div>
+                                <div class="showText">
+                                    <p class="showText-header">吼吼燒精通</p>
+                                    <p>施放「吼吼燒後」<br>在周圍爆發出環形火焰</p>
+                                </div>
+                            </div>
+                            <div  class="icon">
+                                <div class="iconBtn" tabindex="0">
+                                    <img src="./img/page1-4-talent/Spells/AccioMastery.png" alt="">
+                                </div>
+                                <div class="showText">
+                                    <p class="showText-header">速速前精通</p>
+                                    <p>被「速速前」拉過來之目標<br>附近的敵人也會被拉向你</p>
+                                </div>
+                            </div>
+                            <div  class="icon">
+                                <div  class="iconBtn" tabindex="0">
+                                    <img src="./img/page1-4-talent/Spells/LeviosoMastery.png" alt="">
+                                </div>
+                                <div class="showText">
+                                    <p class="showText-header">啦唯啊薩精通</p>
+                                    <p>受「啦唯啊薩」影響之目標<br>附近的敵人也會飄浮起來</p>
+                                </div>
+                            </div>
+                            <div  class="icon">
+                                <div  class="iconBtn" tabindex="0">
+                                    <img src="./img/page1-4-talent/Spells/DiffindoMastery.png" alt="">
+                                </div>
+                                <div class="showText">
+                                    <p class="showText-header">吩吩綻精通</p>
+                                    <p>「吩吩綻」命中敵人時可穿透<br>並攻擊額外目標</p>
+                                </div>
+                            </div>
+                            <div  class="icon">
+                                <div  class="iconBtn" tabindex="0">
+                                    <img src="./img/page1-4-talent/Spells/DepulsoMastery.png" alt="">
+                                </div>
+                                <div class="showText">
+                                    <p class="showText-header">拉索術精通</p>
+                                    <p>施放「拉索術」可直接在你周圍<br>額外釋放一次衝擊波</p>
+                                </div>
+                            </div>
+                            <div  class="icon">
+                                <div  class="iconBtn" tabindex="0">
+                                    <img src="./img/page1-4-talent/Spells/ConfringoMastery.png" alt="">
+                                </div>
+                                <div class="showText">
+                                    <p class="showText-header">爆爆炸精通</p>
+                                    <p>「爆爆炸」命中後產生炙熱投射物<br>追擊敵方目標</p>
+                                </div>
+                            </div>   
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="icon-field">
+                        <div class="level">Lv.16</div>
+                        <div class="icon-bar">
+                            <div  class="icon">
+                                <div  class="iconBtn" tabindex="0">
+                                    <img src="./img/page1-4-talent/Spells/BombardaMastery.png" alt="">
+                                </div>
+                                <div class="showText">
+                                    <p class="showText-header">大爆爆精通</p>
+                                    <p>可引發爆炸且效果範圍更大</p>
+                                </div>
+                            </div>
+                            <div  class="icon">
+                                <div  class="iconBtn" tabindex="0">
+                                    <img src="./img/page1-4-talent/Spells/DescendoMastery.png" alt="">
+                                </div>
+                                <div class="showText">
+                                    <p class="showText-header">低低降精通</p>
+                                    <p>使用「低低降」把敵人摔在地上後<br>可在你的目標周圍產生一次傷害性衝擊波</p>
+                                </div>
+                            </div>
+                            <div  class="icon">
+                                <div  class="iconBtn" tabindex="0">
+                                    <img src="./img/page1-4-talent/Spells/GlaciusMastery.png" alt="">
+                                </div>
+                                <div class="showText">
+                                    <p class="showText-header">冰凍咒精通</p>
+                                    <p>命中被「冰凍咒」冰凍的敵人<br>會以目標為中心向外爆發出傷害性碎片</p>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="icon-field">
+                        <div class="level">Lv.22</div>
+                        <div class="icon-bar">
+                            <div  class="icon">
+                                <div  class="iconBtn" tabindex="0">
+                                    <img src="./img/page1-4-talent/Spells/TransformationMastery.png" alt="">
+                                </div>
+                                <div class="showText">
+                                    <p class="showText-header">變形咒精通</p>
+                                    <p>被「變形咒」咒語命中的敵人<br>會變成爆裂物</p>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                </section>
+                <!-- blackmagic -->
+                <section class="inactived">
+                    <div class="talent-header">黑魔法</div>
+                    <hr>
+                    <div class="icon-field">
+                        <div class="level">Lv.5</div>
+                        <div class="icon-bar">
+                            <div class="icon">
+                                <div class="iconBtn" tabindex="0">
+                                    <img src="./img/page1-4-talent/DarkArts/StunningCurse.png" alt="">
+                                </div>
+                                <div class="showText">
+                                    <p class="showText-header">暈眩咒</p>
+                                    <p>「咄咄失」對敵人具有等同詛咒的效果<br>受詛咒的敵人承受額外傷害</p>
+                                </div>
+                            </div>
+                            <div  class="icon">
+                                <div class="iconBtn" tabindex="0">
+                                    <img src="./img/page1-4-talent/DarkArts/BloodCurse.png" alt="">
+                                </div>
+                                <div class="showText">
+                                    <p class="showText-header">血詛咒</p>
+                                    <p>對受詛咒的目標造成傷害後<br>也會對所有受詛咒的目標造成傷害</p>
+                                </div>
+                            </div>
+                            <div  class="icon">
+                                <div  class="iconBtn" tabindex="0">
+                                    <img src="./img/page1-4-talent/DarkArts/DisarmingCurse.png" alt="">
+                                </div>
+                                <div class="showText">
+                                    <p class="showText-header">繳械咒</p>
+                                    <p>「去去武器走」對敵人具有等同詛咒的效果<br>受詛咒的敵人承受額外傷害</p>
+                                </div>
+                            </div>
+                            <div  class="icon">
+                                <div  class="iconBtn" tabindex="0">
+                                    <img src="./img/page1-4-talent/DarkArts/KnockbackCurse.png" alt="">
+                                </div>
+                                <div class="showText">
+                                    <p class="showText-header">「擊退咒」</p>
+                                    <p>「翻翻倒」對敵人具有等同詛咒的效果<br>受詛咒的敵人承受額外傷害</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="icon-field">
+                        <div class="level">Lv.16</div>
+                        <div class="icon-bar">
+                            <div  class="icon">
+                                <div  class="iconBtn" tabindex="0">
+                                    <img src="./img/page1-4-talent/DarkArts/EnduringCurse.png" alt="">
+                                </div>
+                                <div class="showText">
+                                    <p class="showText-header">永恆詛咒</p>
+                                    <p>敵人受到詛咒時<br>詛咒效果持續時間較長</p>
+                                </div>
+                            </div>
+                            <div  class="icon">
+                                <div  class="iconBtn" tabindex="0">
+                                    <img src="./img/page1-4-talent/DarkArts/SlowingCurse.png" alt="">
+                                </div>
+                                <div class="showText">
+                                    <p class="showText-header">緩速咒</p>
+                                    <p>「緩速咒」對敵人具有等同詛咒的效果<br>受詛咒的敵人承受額外傷害</p>
+                                </div>
+                            </div>
+                            <div  class="icon">
+                                <div  class="iconBtn" tabindex="0">
+                                    <img src="./img/page1-4-talent/DarkArts/ImperioMastery.png" alt="">
+                                </div>
+                                <div class="showText">
+                                    <p class="showText-header">噩噩令精通</p>
+                                    <p>受到你「噩噩令」控制的敵人<br>每次成功發動攻擊時都會詛咒其他目標</p>
+                                </div>
+                            </div> 
+                            <div  class="icon">
+                                <div  class="iconBtn" tabindex="0">
+                                    <img src="./img/page1-4-talent/DarkArts/CrucioMastery.png" alt="">
+                                </div>
+                                <div class="showText">
+                                    <p class="showText-header">咒咒虐精通</p>
+                                    <p>攻擊受到「咒咒虐」影響的敵人<br>可釋放投射物詛咒附近的敵人</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="icon-field">
+                        <div class="level">Lv.22</div>
+                        <div class="icon-bar">
+                            <div  class="icon">
+                                <div  class="iconBtn" tabindex="0">
+                                    <img src="./img/page1-4-talent/DarkArts/AvadaKedavraMastery.png" alt="">
+                                </div>
+                                <div class="showText">
+                                    <p class="showText-header">啊哇呾喀呾啦精通</p>
+                                    <p>使用「啊哇呾喀呾啦」擊殺敵人時<br>也會擊殺所有受到詛咒的敵人</p>
+                                </div>
+                            </div> 
+                            <div  class="icon">
+                                <div  class="iconBtn" tabindex="0">
+                                    <img src="./img/page1-4-talent/DarkArts/CurseSapper.png" alt="">
+                                </div>
+                                <div class="showText">
+                                    <p class="showText-header">詛咒工兵</p>
+                                    <p>打敗一名被詛咒的敵人<br>將為你恢復一些生命值</p>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                </section>
+                <!-- Core -->
+                <section class="inactived">
+                    <div class="talent-header">核心</div>
+                    <hr>
+                    <div class="icon-field">
+                        <div class="level">Lv.5</div>
+                        <div class="icon-bar">
+                            <div class="icon">
+                                <div class="iconBtn" tabindex="0">
+                                    <img src="./img/page1-4-talent/Core/AncientMagicThrowExpertise.png" alt="">
+                                </div>
+                                <div class="showText">
+                                    <p class="showText-header">古代魔法投擲專精</p>
+                                    <p>「古代魔法投擲」可抓住和投擲<br>從敵人身上繳械而來的武器</p>
+                                </div>
+                            </div>
+                            <div  class="icon">
+                                <div class="iconBtn" tabindex="0">
+                                    <img src="./img/page1-4-talent/Core/BasicCastMastery.png" alt="">
+                                </div>
+                                <div class="showText">
+                                    <p class="showText-header">基礎施法滯空吸收</p>
+                                    <p>基礎施法命中滯空敵人時<br>能累積更多古代魔法蓄力條</p>
+                                </div>
+                            </div>
+                            <div  class="icon">
+                                <div  class="iconBtn" tabindex="0">
+                                    <img src="./img/page1-4-talent/Core/ProtegoAbsorption.png" alt="">
+                                </div>
+                                <div class="showText">
+                                    <p class="showText-header">破心護吸收</p>
+                                    <p>成功使用「破心護」擋住攻擊<br>能累積古代魔法蓄力條<br>完美擋住攻擊能累積更多古代魔法</p>
+                                </div>
+                            </div>
+                            <div  class="icon">
+                                <div  class="iconBtn" tabindex="0">
+                                    <img src="./img/page1-4-talent/Core/Swift.png" alt="">
+                                </div>
+                                <div class="showText">
+                                    <p class="showText-header">快速</p>
+                                    <p>按住閃躲鍵能夠快速消失<br>並重新出現在附近</p>
+                                </div>
+                            </div>
+                            <div  class="icon">
+                                <div  class="iconBtn" tabindex="0">
+                                    <img src="./img/page1-4-talent/Core/SpellKnowledge-I.png" alt="">
+                                </div>
+                                <div class="showText">
+                                    <p class="showText-header">咒語知識I</p>
+                                    <p>添加一個新的咒語組 使用滑鼠滾輪<br>在未鎖定的咒語組之間滾動<br>或使用F1~F4來切換不同的組</p>
+                                </div>
+                            </div>
+                            <div  class="icon">
+                                <div  class="iconBtn" tabindex="0">
+                                    <img src="./img/page1-4-talent/Core/SpellKnowledge-II.png" alt="">
+                                </div>
+                                <div class="showText">
+                                    <p class="showText-header">咒語知識II</p>
+                                    <p>添加一個新的咒語組 使用滑鼠滾輪<br>在未鎖定的咒語組之間滾動<br>或使用F1~F4來切換不同的組</p>
+                                </div>
+                            </div>   
+                            <div  class="icon">
+                                <div  class="iconBtn" tabindex="0">
+                                    <img src="./img/page1-4-talent/Core/WiggenweldPotency-I.png" alt="">
+                                </div>
+                                <div class="showText">
+                                    <p class="showText-header">強效回神魔藥I</p>
+                                    <p>回神魔藥的治療效果更強</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="icon-field">
+                        <div class="level">Lv.16</div>
+                        <div class="icon-bar">
+                            <div  class="icon">
+                                <div  class="iconBtn" tabindex="0">
+                                    <img src="./img/page1-4-talent/Core/SpellKnowledge-III.png" alt="">
+                                </div>
+                                <div class="showText">
+                                    <p class="showText-header">咒語知識III</p>
+                                    <p>添加一個新的咒語組 使用滑鼠滾輪<br>在未鎖定的咒語組之間滾動<br>或使用F1~F4來切換不同的組</p>
+                                </div>
+                            </div>
+                            <div  class="icon">
+                                <div  class="iconBtn" tabindex="0">
+                                    <img src="./img/page1-4-talent/Core/RevelioMastery.png" alt="">
+                                </div>
+                                <div class="showText">
+                                    <p class="showText-header">現現行精通</p>
+                                    <p>增加「現現行」的範圍</p>
+                                </div>
+                            </div>
+                            <div  class="icon">
+                                <div  class="iconBtn" tabindex="0">
+                                    <img src="./img/page1-4-talent/Core/BasicCastAirborneAbsorption.png" alt="">
+                                </div>
+                                <div class="showText">
+                                    <p class="showText-header">基礎施法精通</p>
+                                    <p>基礎施法命中目標後<br>可降低咒語的冷卻時間</p>
+                                </div>
+                            </div>
+                            <div  class="icon">
+                                <div  class="iconBtn" tabindex="0">
+                                    <img src="./img/page1-4-talent/Core/ProtegoExpertise.png" alt="">
+                                </div>
+                                <div class="showText">
+                                    <p class="showText-header">破心護專精</p>
+                                    <p>用完美的阻擋咒語<br>將會向敵人反彈兩枚飛行物</p>
+                                </div>
+                            </div> 
+                            <div  class="icon">
+                                <div  class="iconBtn" tabindex="0">
+                                    <img src="./img/page1-4-talent/Core/EvasionAbsorption.png" alt="">
+                                </div>
+                                <div class="showText">
+                                    <p class="showText-header">閃避吸收</p>
+                                    <p>使用「閃避」成功躲開無法抵擋的攻擊<br>能累積古代魔法蓄力條</p>
+                                </div>
+                            </div> 
+                            <div  class="icon">
+                                <div  class="iconBtn" tabindex="0">
+                                    <img src="./img/page1-4-talent/Core/StupefyMastery.png" alt="">
+                                </div>
+                                <div class="showText">
+                                    <p class="showText-header">咄咄失精通</p>
+                                    <p>被「咄咄失」命中的敵人<br>昏迷效果持續時間較長</p>
+                                </div>
+                            </div>  
+                            <div  class="icon">
+                                <div  class="iconBtn" tabindex="0">
+                                    <img src="./img/page1-4-talent/Core/WiggenweldPotency-II.png" alt="">
+                                </div>
+                                <div class="showText">
+                                    <p class="showText-header">強效回神魔藥II</p>
+                                    <p>回神魔藥的治療效果更強</p>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="icon-field">
+                        <div class="level">Lv.22</div>
+                        <div class="icon-bar">
+                            <div  class="icon">
+                                <div  class="iconBtn" tabindex="0">
+                                    <img src="./img/page1-4-talent/Core/StupefyExpertise.png" alt="">
+                                </div>
+                                <div class="showText">
+                                    <p class="showText-header">咄咄失專精</p>
+                                    <p>「咄咄失」在命中時造成直接傷害</p>
+                                </div>
+                            </div> 
+                            <div  class="icon">
+                                <div  class="iconBtn" tabindex="0">
+                                    <img src="./img/page1-4-talent/Core/ProtegoMastery.png" alt="">
+                                </div>
+                                <div class="showText">
+                                    <p class="showText-header">破心護精通</p>
+                                    <p>完美的「破心護」可釋放破壞性的爆炸<br>打破敵人的護盾</p>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                </section>
+                <!-- 潛行 -->
+                <section class="inactived">
+                    <div class="talent-header">潛行</div>
+                    <hr>
+                    <div class="icon-field">
+                        <div class="level">Lv.5</div>
+                        <div class="icon-bar">
+                            <div class="icon">
+                                <div class="iconBtn" tabindex="0">
+                                    <img src="./img/page1-4-talent/Stealth/SenseofSecrecy-I.png" alt="">
+                                </div>
+                                <div class="showText">
+                                    <p>神秘感應I<br>敵人偵測你的能力變弱</p>
+                                </div>
+                            </div>
+                            <div  class="icon">
+                                <div class="iconBtn" tabindex="0">
+                                    <img src="./img/page1-4-talent/Stealth/HumanDemiguise.png" alt="">
+                                </div>
+                                <div class="showText">
+                                    <p>人類幻影猿<br>讓你在使用「滅幻」時能夠衝刺</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="icon-field">
+                        <div class="level">Lv.16</div>
+                        <div class="icon-bar">
+                            <div  class="icon">
+                                <div  class="iconBtn" tabindex="0">
+                                    <img src="./img/page1-4-talent/Stealth/SenseofSecrecy-II.png" alt="">
+                                </div>
+                                <div class="showText">
+                                    <p>神秘感應II<br>敵人偵測你的能力變弱</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="icon-field">
+                        <div class="level">Lv.22</div>
+                        <div class="icon-bar">
+                            <div  class="icon">
+                                <div  class="iconBtn" tabindex="0">
+                                    <img src="./img/page1-4-talent/Stealth/PetrificusTotalusMastery.png" alt="">
+                                </div>
+                                <div class="showText">
+                                    <p>整整石化精通<br>「整整石化」散發出範圍效果<br>能夠命中附近敵人</p>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                </section>
+                <!-- 萬應室 -->
+                <section class="inactived">
+                    <div class="talent-header">萬應室</div>
+                    <!-- <div class="talent-intro">咒語增強能力</div> -->
+                    <hr>
+                    <div class="icon-field">
+                        <div class="level">Lv.5</div>
+                        <div class="icon-bar">
+                            <div class="icon">
+                                <div class="iconBtn" tabindex="0">
+                                    <img src="./img/page1-4-talent/RoomofRequirement/EdurusPotionPotency.png" alt="">
+                                </div>
+                                <div class="showText">
+                                    <p>強效硬得固魔藥<br>硬得固魔藥使你無敵<br>並反彈投射物攻擊回去給敵人</p>
+                                </div>
+                            </div>
+                            <div  class="icon">
+                                <div class="iconBtn" tabindex="0">
+                                    <img src="./img/page1-4-talent/RoomofRequirement/Fertiliser.png" alt="">
+                                </div>
+                                <div class="showText">
+                                    <p>肥料<br>每丟出一個中國咬人甘藍<br>就免費生成並釋放另一個中國咬人甘藍</p>
+                                </div>
+                            </div>
+                            <div  class="icon">
+                                <div  class="iconBtn" tabindex="0">
+                                    <img src="./img/page1-4-talent/RoomofRequirement/InvisibilityPotionPotency.png" alt="">
+                                </div>
+                                <div class="showText">
+                                    <p>強效隱形魔藥<br>隱形魔藥使你變得無法偵測的效果<br>其持續時間較長</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="icon-field">
+                        <div class="level">Lv.16</div>
+                        <div class="icon-bar">
+                            <div  class="icon">
+                                <div  class="iconBtn" tabindex="0">
+                                    <img src="./img/page1-4-talent/RoomofRequirement/MaximaPotionPotency.png" alt="">
+                                </div>
+                                <div class="showText">
+                                    <p>強效終極魔藥<br>終極魔藥使攻擊的額外傷害增加<br>且能夠摧毀敵人的護盾</p>
+                                </div>
+                            </div>
+                            <div  class="icon">
+                                <div  class="iconBtn" tabindex="0">
+                                    <img src="./img/page1-4-talent/RoomofRequirement/Headache.png" alt="">
+                                </div>
+                                <div class="showText">
+                                    <p>頭痛<br>增加魔蘋果使人癱瘓效果的傷害和持續時間</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="icon-field">
+                        <div class="level">Lv.22</div>
+                        <div class="icon-bar">
+                            <div  class="icon">
+                                <div  class="iconBtn" tabindex="0">
+                                    <img src="./img/page1-4-talent/RoomofRequirement/ThunderbrewPotency.png" alt="">
+                                </div>
+                                <div class="showText">
+                                    <p>強效雷釀<br>顯著增加魔藥效果的範圍與傷害</p>
+                                </div>
+                            </div> 
+                            <div  class="icon">
+                                <div  class="iconBtn" tabindex="0">
+                                    <img src="./img/page1-4-talent/RoomofRequirement/FocusPotionPotency.png" alt="">
+                                </div>
+                                <div class="showText">
+                                    <p>強效專注藥劑<br>在使用專注魔藥期間<br>從咒語組釋放任何魔咒<br>將會延長其效果的持續時間</p>
+                                </div>
+                            </div>
+                            <div  class="icon">
+                                <div  class="iconBtn" tabindex="0">
+                                    <img src="./img/page1-4-talent/RoomofRequirement/Noxious.png" alt="">
+                                </div>
+                                <div class="showText">
+                                    <p>毒害<br>毒觸手攻擊時造成額外傷害<br>並摧毀護盾</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer class="item">
+
+        </footer>
+    </div>
+    
+</body>
+</html>
+
+<script>
+    var a = document.getElementById("myCanvas");
+    var ctx = a.getContext('2d');
+    ctx.lineWidth = 3;
+    ctx.strokeStyle = 'white';
+    ctx.beginPath();
+    ctx.moveTo(10,10);
+    ctx.lineTo(40, 10);
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.moveTo(10,20);
+    ctx.lineTo(40,20);
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.moveTo(10,30);
+    ctx.lineTo(40,30);
+    ctx.stroke();
+</script>
+<script>
+    var VisibleMenu = ''; // 記錄目前顯示的子選單的 ID
+
+    // 顯示或隱藏子選單
+    function switchMenu( theMainMenu, theSubMenu, theEvent ){
+        var SubMenu = document.getElementById( theSubMenu );
+        if( SubMenu.style.display == 'none' ){ // 顯示子選單
+            SubMenu.style.display = 'flex';
+            // hideMenu(); // 隱藏子選單
+            VisibleMenu = theSubMenu;
+        }
+        else{ // 隱藏子選單
+            if( theEvent != 'MouseOver' || VisibleMenu != theSubMenu ){
+                SubMenu.style.display = 'none';
+                VisibleMenu = '';
+            }
+        }
+    }
+
+    // 隱藏子選單
+    function hideMenu(){
+        if( VisibleMenu != '' ){
+            document.getElementById( VisibleMenu ).style.display = 'none';
+        }
+        VisibleMenu = '';
+    }
+
+    function Menu(SubMenu){
+        subMenu.style.display == 'flex';
+    }
+</script>
+
+<script>
+    var bars = document.getElementsByClassName("bar-chart");
+    var section = document.getElementsByTagName("section");
+    var index = 0;
+    bars[0].addEventListener("click", function(){
+        for(var i = 0; i < bars.length; i++){
+            bars[i].style.opacity = 0.5;
+            section[i].className = "inactived";
+        }
+        index = 0;
+        bars[0].style.opacity= 1;
+        section[0].className = "actived";
+    })
+    bars[1].addEventListener("click", function(){
+        for(var i = 0; i < bars.length; i++){
+            bars[i].style.opacity = 0.5; 
+            section[i].className = "inactived";
+        }
+        index = 0;
+        bars[1].style.opacity= 1;
+        section[1].className = "actived";
+    })
+    bars[2].addEventListener("click", function(){
+        for(var i = 0; i < bars.length; i++){
+            bars[i].style.opacity = 0.5;
+            section[i].className = "inactived";
+        }
+        index = 0;
+        bars[2].style.opacity= 1;
+        section[2].className = "actived";
+    })
+    bars[3].addEventListener("click", function(){
+        for(var i = 0; i < bars.length; i++){
+            bars[i].style.opacity = 0.5;
+            section[i].className = "inactived";
+        }
+        index = 0;
+        bars[3].style.opacity= 1;
+        section[3].className = "actived";
+    })
+    bars[4].addEventListener("click", function(){
+        for(var i = 0; i < bars.length; i++){
+            bars[i].style.opacity = 0.5;
+            section[i].className = "inactived";
+        }
+        index = 0;
+        bars[4].style.opacity= 1;
+        section[4].className = "actived";
+    })
+    bars[5].addEventListener("click", function(){
+        for(var i = 0; i < bars.length; i++){
+            bars[i].style.opacity = 0.5;
+            section[i].className = "inactived";
+        }
+        index = 0;
+        bars[5].style.opacity= 1;
+        section[5].className = "actived";
+    })
+    window.addEventListener("wheel", function(event){
+        if (event.deltaY < 0)
+        {
+            for(var i = 0; i < bars.length; i++){
+            bars[i].style.opacity = 0.5;
+            section[i].className = "inactived";
+            }
+            index -= 1;
+            if(index < 0){
+                index = section.length-1;
+            }
+            bars[index].style.opacity= 1;
+            section[index].className = "actived";
+        }
+        else if (event.deltaY > 0)
+        {
+            for(var i = 0; i < bars.length; i++){
+            bars[i].style.opacity = 0.5;
+            section[i].className = "inactived";
+            }
+            index += 1;
+            if(index >= section.length){
+                index = 0;
+            }
+            bars[index].style.opacity= 1;
+            section[index].className = "actived";
+        }
+    })
+</script>
