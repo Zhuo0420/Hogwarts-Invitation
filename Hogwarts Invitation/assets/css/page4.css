@@ -57,7 +57,7 @@
 .dev-intro p {
     background: radial-gradient(ellipse at center bottom, rgb(0, 0, 0),transparent 95%);
     border-radius: 200px 200px 0 0;
-    padding: 20px;
+    padding: 10px;
 }
 .dev-logo a img {
     height: 400px;
@@ -78,7 +78,7 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
-    margin-top: 5vh;
+    margin-top: 3vh;
 }
 
 .dev-games a {
@@ -98,7 +98,8 @@
     gap: 10px;
     z-index: 2;
     justify-content: center;
-    /* align-items: center; */
+    align-items: center;
+    margin-top: 3vh;
 }
 
 .bg-dot {
