@@ -13,17 +13,20 @@
     flex-direction: row;
     justify-content: center;
     font-size: 50px;
-    gap: 100px;
+    gap: 150px;
+    animation: header_fadein 2s ease;
 }
+
 hr{
     width: 85vw;
 }
 .member-intro{
     display: flex;
     flex-direction: row;
-    width: 85vw;
+    width: 75vw;
     justify-content: space-evenly;
     margin-top: 50px;
+    animation: member_intro_fadeup 2s ease;
 }
 .headshot{
     display: flex;
@@ -43,8 +46,29 @@ hr{
     align-items: center;
 }
 .item:nth-child(2){
-    height: 100vh;
+    height: 75vh;
 }
 body{
     overflow-x: hidden;
+}
+
+@keyframes header_fadein{
+    0% {
+        gap: 0px;
+        opacity: 0;
+    }
+    100% {
+        gap: 150px;
+        opacity: 1;
+    }
+}
+@keyframes member_intro_fadeup{
+    0% {
+        opacity: 0;
+        transform: translateY(250px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }
