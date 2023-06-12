@@ -23,7 +23,7 @@
   background-size: calc(100% - (var(--border-size) * 2)) calc(100% - (var(--border-size) * 2)), cover;
   background-position: center center;
   background-repeat: no-repeat;
-  box-shadow: 0 0 100px rgb(57, 29, 85);
+  box-shadow: 0 0 100px rgb(94, 48, 139);
   -webkit-animation: bg-spin 3s linear infinite;
   animation: bg-spin 3s linear infinite;
 }
@@ -54,24 +54,26 @@
 /* form-nav */
 .thead th {
   display: flex;
-  justify-content: space-evenly;
-  color: rgb(29, 30, 24);
+  justify-content: space-around;
+  padding: 4px 0;
+  border-bottom: 0.5px solid rgba(169, 83, 255, 0.75);
 }
 
 p {
   width: 34.6vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 35px;
   cursor: pointer;
-  color: white;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .active {
   z-index: 1;
-  padding-left: 1em;
-  display: inline-block;
-  padding: .3em 1em 0;
+  padding-top: .3em;
   text-decoration: none;
-  color: rgb(255, 238, 0);
+  color: rgb(255, 245, 102);
   text-shadow: 3px 3px 5px rgb(109, 49, 0);
   position: relative;
   margin: 0 -.3em;
@@ -121,13 +123,8 @@ p:last-child::before {
 }
 
 tr {
-  --border-size: 1px;
-  --border-angle: 0turn;
-  background-image: conic-gradient(from var(--border-angle), rgb(34, 17, 51), rgb(17, 17, 34) 50%, rgb(34, 17, 51)), conic-gradient(from var(--border-angle), transparent 20%, rgb(0, 153, 255), rgb(255, 0, 98));
-  background-size: calc(100% - (var(--border-size) * 2)) calc(100% - (var(--border-size) * 2)), cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  -webkit-animation: bg-spin 3s linear infinite;
-  animation: bg-spin 3s linear infinite;
+  border-bottom: 0.5px solid rgba(169, 83, 255, 0.75);
+  /* --border-size: 1px;
+  --border-angle: 0turn; */
   padding: 10px;
 }
