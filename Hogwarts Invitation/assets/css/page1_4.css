@@ -128,6 +128,7 @@ p{
     /* animation: text_close 1s ease; */
     cursor: default;
     font-size: 18px;
+    padding-left: 20px;
 }
 
 .iconBtn:focus + .showText{
