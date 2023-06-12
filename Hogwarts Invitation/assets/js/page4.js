@@ -117,6 +117,6 @@ gamesLogo[4].addEventListener("mouseover", function () {
 })
 gamesNav.addEventListener("mouseleave", function () {
     for (var i = 0; i < gamesLogo.length; i++) {
-        gamesLogo[i].style.opacity = "1";
+        gamesLogo[i].style.opacity = "0.5";
     }
 })

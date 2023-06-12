@@ -3,10 +3,7 @@
     z-index: 3;
 }
 .item:nth-child(2){
-    height:auto;
-}
-.item:last-child{
-    z-index: 3;
+    height:75vh;
 }
 
 .developer {
@@ -14,6 +11,7 @@
     justify-content: center;
     width: 100vw;
     z-index: 1;
+    height:75vh;
 }
 
 .dev-bg {
@@ -24,8 +22,8 @@
 .dev-bg img {
     position: fixed;
     left: 0;
-    bottom: 0vh;
-    height: 100vh;
+    top: 0vh;
+    height: 90vh;
     width: 100vw;
     opacity: 0;
     transition: opacity 1s ease-out;
@@ -51,26 +49,20 @@
     flex-direction: column;
     text-align: center;
     justify-content: center;
-    gap: 10vh;
+    gap: 3vh;
     font-size: 20px;
     color: white;
     z-index: 2;
     padding-bottom: 10vh;
 }
-
-.dev-info p {
+.dev-intro p {
     background: radial-gradient(ellipse at center bottom, rgb(0, 0, 0),transparent 95%);
     border-radius: 200px 200px 0 0;
     padding: 20px;
 }
-.dev-logo{
-    margin-top: 10vh;
-    margin-bottom: 10vh;
-    height: 45vh;
-}
 .dev-logo a img {
-    height: 500px;
-    width: 1050px;
+    height: 400px;
+    width: 950px;
 }
 
 .dev-intro{
@@ -101,11 +93,12 @@
 
 .bg-dot-nav {
     display: flex;
-    position: fixed;
-    bottom: 20px;
-    flex-direction: row;
+    position: sticky;
+    bottom: 50px;
     gap: 10px;
     z-index: 2;
+    justify-content: center;
+    /* align-items: center; */
 }
 
 .bg-dot {
