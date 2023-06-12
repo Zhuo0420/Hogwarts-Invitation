@@ -29,6 +29,7 @@
     width: 10px;
     height: 120px;
     opacity: 0.5;
+    cursor: pointer;
 }
 .bar-chart:first-child{
     opacity: 1;
