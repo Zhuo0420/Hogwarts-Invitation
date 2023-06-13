@@ -13,7 +13,7 @@
     flex-direction: row;
     justify-content: center;
     font-size: 50px;
-    gap: 150px;
+    gap: 5vw;
     animation: header_spread 2s ease;
 }
 
@@ -55,11 +55,11 @@ body{
 
 @keyframes header_spread{
     0% {
-        gap: 0px;
+        gap: 0vw;
         opacity: 0;
     }
     100% {
-        gap: 150px;
+        gap: 5vw;
         opacity: 1;
     }
 }
