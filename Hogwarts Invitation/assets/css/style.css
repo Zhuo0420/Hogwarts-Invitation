@@ -4,6 +4,8 @@
     box-sizing: border-box;
     padding: 1;
     margin: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 body,
@@ -32,7 +34,6 @@ iframe {
 header.item {
     z-index: 999;
 }
-
 .item:first-child {
     grid-area: header;
     background-color: transparent;
@@ -176,28 +177,29 @@ p {
     display: block;
 }
 
-.sub-menu {
+.sub-menu{
     /* border-radius: 10px; */
     display: none;
     flex-direction: column;
     justify-content: space-between;
     width: 200px;
-    height: 100vh;
+    /* height: 100vh; */
     background-color: rgb(34, 34, 34);
     position: absolute;
     right: 0;
     top: 0;
-    bottom: 0;
-    left: calc(100vw - 200px);
+    /* bottom: 0; */
+    /* left: calc(100vw - 200px); */
     z-index: 999;
 }
 
 /* 下拉清單的樣式 */
-/* 
+
 .sub-menu div{
-    flex-basis: 20vh;
+    height: calc(100vh/6);
     
-} */
+}
+
 .sub-menu div a {
     text-decoration: none;
     color: white;
@@ -229,7 +231,7 @@ p {
     font-size: 15px;
     background-color: #434343;
     width: 200px;
-    height: 5vh;
+    height: 50%;
     align-items: center;
     justify-content: center;
 }
