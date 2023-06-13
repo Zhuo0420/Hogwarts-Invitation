@@ -40,6 +40,7 @@
                 </div>
         </header>
         <main class="item">
+            
             <div class="mainItem" id="wheelSwitch">
                 <video class="vdL" src="" controls></video>
             </div>
@@ -66,6 +67,7 @@
                 <video class="vdList" src="./assets/media/video/videoplayback6.mp4"></video>
             </div>
         </main>
+        <span class="title">媒體牆</span>
         <footer class="item">
 
         </footer>
@@ -193,7 +195,7 @@
 
         $('.photoBox').on('click', function (e) {
             if (!isZooming) { //only tween if photoBox isn't currently zooming
-
+                
                 isZooming = true;
                 gsap.delayedCall(0.8, function () { isZooming = false });
 

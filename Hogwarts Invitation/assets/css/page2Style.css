@@ -307,3 +307,15 @@ dialog::backdrop {
 .sub-menu div{
     height: 100% ;
 }
+.title{
+    /* height: 20vh; */
+    width: 300px;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    line-height: 100px;
+    position: absolute;
+    top: calc(5vh - 25px);
+    left: calc(50vw - 150px);
+    z-index: 0;
+}
