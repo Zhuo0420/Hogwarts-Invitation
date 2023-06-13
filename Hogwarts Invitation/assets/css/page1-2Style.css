@@ -14,6 +14,9 @@
 
     z-index: 1;
 }
+.face{
+    width: 50vw;
+}
 .faceL{
     position: relative;
     right: 10vw;
@@ -24,8 +27,11 @@
     width: 60vw;
     left: 10vw;
 }
+
 .item:nth-child(2){
     height: 475vh;
+    align-items: center;
+    justify-content: center;
 }
 
 .mask{
@@ -89,4 +95,16 @@
 }
 .sub-menu div{
     height: 100% ;
+}
+
+.title{
+    /* height: 20vh; */
+    text-align: center;
+    font-size: 80px;
+    color: white;
+    line-height: 100px;
+}
+.title span{
+    font-size: 30px;
+    color: white;
 }
