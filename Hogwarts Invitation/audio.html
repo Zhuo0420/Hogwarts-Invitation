@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio</title>
+    <style>
+        * {
+            margin: 0;
+            border: 0;
+            box-sizing: border-box;
+        }
+
+        body,
+        html {
+            width: 20px;
+            height: 20px;
+        }
+
+        #volumeControl {
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            border: 0;
+            background-color: transparent;
+            padding: 0;
+            margin: 0;
+            cursor: pointer;
+        }
+
+        #volumeIcon {
+            width: 20px;
+            height: 20px;
+            filter: invert(0.8);
+        }
+    </style>
+</head>
+
+<body>
+    <button id="volumeControl">
+        <img src="./assets/media/img/volume.png" id="volumeIcon">
+        <audio src="./assets/media/audio/bgm.mp3" id="myAudio" autoplay loop></audio>
+    </button>
+</body>
+<script>
+    var audio = document.getElementById("myAudio");
+    var volumeControl = document.getElementById("volumeControl");
+    var volumeIcon = document.getElementById("volumeIcon");
+
+    window.addEventListener("message", function (event) {
+        if (event.data === "play") {
+            audio.play();
+        }
+    });
+    volumeControl.addEventListener("click", function () {
+        audio.play();
+        if (audio.volume === 0) {
+            audio.volume = 1;
+            volumeIcon.src = "./assets/media/img/volume.png";
+        } else {
+            audio.volume = 0;
+            volumeIcon.src = "./assets/media/img/mute.png";
+        }
+    });
+</script>
+
+</html>

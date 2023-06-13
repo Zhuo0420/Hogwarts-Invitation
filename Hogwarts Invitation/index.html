@@ -16,11 +16,14 @@
             <a href="index.html">
                 <div class="top"></div>
             </a>
+            <iframe id="audioFrame" src="./audio.html" frameborder="0"></iframe>
             <div class="manu" onmouseover="switchMenu( this, 'SubMenu', 'MouseOver' )" onmouseout="hideMenu()">
                 <canvas id="myCanvas" width="50" height="50"></canvas>
                 <div id="SubMenu" class="sub-menu">
                     <div class="page1Manu">
+                        <div><a href="page1_1.html">開放世界</a></div>
                         <div><a href="page1_2.html">捏臉系統</a></div>
+                        <div><a href="page1_3.html">法術戰鬥</a></div>
                         <div><a href="page1_4.html">天賦系統</a></div>
                     </div>
                     <div><a href="page2.html">媒體牆</a></div>
@@ -31,15 +34,20 @@
                 </div>
         </header>
         <main class="item">
-            <video class="vd" muted loop autoplay src="./assets/media/video/videoplayback2.mp4"></video><br>
-            <div class="text1">
-                <h1  style="letter-spacing: 8px;">霍格華茲的邀請函</h1>
-                <h1>Hogwarts Invitation</h1>
-                <br>
-                <p>《霍格華茲的傳承》是一款以「哈利波特」系列書籍為背景設定的一款動作角色扮演遊戲。</p>
-                <p>玩家將扮演掌握古老秘密之關鍵的學生，體驗1800年代的霍格華茲，踏上一段魔法的冒險旅程。</p>
-                <p>在過程中探索奇獸、製作魔藥、與黑巫師戰鬥，並決定魔法世界的命運。</p>
-                <p>撰寫你的傳奇，留待後世頌揚。</p>
+            <video class="vdunder" id="vdunder" muted loop autoplay></video>
+            <video class="vd" id="vd" muted loop autoplay src="./assets/media/video/videoplayback2.mp4"></video><br>
+            <div class="cover"></div>
+            <div class="text">
+                <div class="text1">
+                    <h1 style="letter-spacing: 8px;">霍格華茲的邀請函</h1>
+                    <h1>Hogwarts Invitation</h1>
+                </div>
+                <div class="text2">
+                    <p>《霍格華茲的傳承》是一款以「哈利波特」系列書籍為背景設定的一款動作角色扮演遊戲。</p>
+                    <p>玩家將扮演掌握古老秘密之關鍵的學生，體驗1800年代的霍格華茲，踏上一段魔法的冒險旅程。</p>
+                    <p>在過程中探索奇獸、製作魔藥、與黑巫師戰鬥，並決定魔法世界的命運。</p>
+                    <p>撰寫你的傳奇，留待後世頌揚。</p>
+                </div>
             </div>
         </main>
     </div>
@@ -48,3 +56,4 @@
 
 </html>
 <script src="./assets/js/menu.js"></script>
+<script src="./assets/js/index.js"></script>
