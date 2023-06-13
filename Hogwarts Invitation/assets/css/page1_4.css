@@ -220,3 +220,7 @@ p{
         transform: translateY(0px);
     }
 }
+
+.page1Manu div{
+    height: 50% ;
+}

@@ -142,3 +142,7 @@ tr {
   --border-angle: 0turn; */
   padding: 1vh;
 }
+
+.page1Manu div{
+  height: 50% ;
+}
