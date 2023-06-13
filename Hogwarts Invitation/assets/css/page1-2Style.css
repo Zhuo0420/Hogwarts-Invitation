@@ -62,7 +62,7 @@
 @keyframes fadeLeftToRight{
     from{
         left: 0vw;
-        background: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgb(29, 30, 24) 75%);
+        background: linear-gradient(90deg, rgb(29, 30, 24), rgb(29, 30, 24) 75%);
     }
     to{
         right: 0;
@@ -82,4 +82,11 @@
         clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
         background: linear-gradient(90deg, rgb(29, 30, 24) 50%, rgba(0, 0, 0, 0));
     }
+}
+
+.page1Manu div{
+    height: 50% ;
+}
+.sub-menu div{
+    height: 100% ;
 }

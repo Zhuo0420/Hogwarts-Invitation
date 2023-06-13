@@ -47,7 +47,7 @@ hr{
     align-items: center;
 }
 .item:nth-child(2){
-    height: 75vh;
+    height: 100vh;
 }
 body{
     overflow-x: hidden;
