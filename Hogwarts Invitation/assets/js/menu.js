@@ -47,3 +47,9 @@ function hideMenu(){
 function Menu(SubMenu){
     subMenu.style.display == 'flex';
 }
+
+//聲音控制項
+var audioFrame = document.getElementById("audioFrame");
+document.addEventListener("click", function () {
+    audioFrame.contentWindow.postMessage("play", "*");
+});
