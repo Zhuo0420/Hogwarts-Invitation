@@ -14,11 +14,12 @@
     justify-content: center;
     font-size: 50px;
     gap: 150px;
-    animation: header_fadein 2s ease;
+    animation: header_spread 2s ease;
 }
 
 hr{
     width: 85vw;
+    animation: hr_spread 2s ease;
 }
 .member-intro{
     display: flex;
@@ -52,13 +53,23 @@ body{
     overflow-x: hidden;
 }
 
-@keyframes header_fadein{
+@keyframes header_spread{
     0% {
         gap: 0px;
         opacity: 0;
     }
     100% {
         gap: 150px;
+        opacity: 1;
+    }
+}
+@keyframes hr_spread{
+    0% {
+        width: 0vw;
+        opacity: 0;
+    }
+    100% {
+        width: 85vw;
         opacity: 1;
     }
 }
